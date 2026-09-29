@@ -50,8 +50,8 @@ body {
 
 .hero-surface {
   background:
-    radial-gradient(980px 640px at 88% 8%, #b6e89a 0%, rgb(182 232 154 / 0) 58%),
-    linear-gradient(180deg, #fff 0%, #f4fbf0 46%, #fff 100%);
+    radial-gradient(1180px 980px at 86% 22%, #b6e89a 0%, rgb(182 232 154 / 0) 74%),
+    linear-gradient(180deg, #fff 0%, #f3fbea 42%, #f7fdf3 78%, #fff 100%);
 }
 
 @media (prefers-reduced-motion: reduce) {

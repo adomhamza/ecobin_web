@@ -20,8 +20,8 @@ function FeatureTitle({ children, className = '' }) {
   )
 }
 
-function FeatureCopy({ children }) {
-  return <p className="mt-4 max-w-sm text-lg leading-relaxed text-muted">{children}</p>
+function FeatureCopy({ children, className = 'mt-4' }) {
+  return <p className={`max-w-sm text-lg leading-relaxed text-muted ${className}`}>{children}</p>
 }
 
 function FillGauge() {
@@ -30,7 +30,7 @@ function FillGauge() {
   const progress = 0.2
 
   return (
-    <div className="mx-auto w-44 lg:mx-0">
+    <div className="mx-auto w-44">
       <svg viewBox="0 0 200 118" className="w-full" aria-hidden="true">
         <path
           d="M22 104 A78 78 0 0 1 178 104"
@@ -64,22 +64,22 @@ export default function Features() {
         </h2>
       </div>
 
-      <div className="section-reveal mx-auto grid w-full max-w-[1120px] items-center gap-12 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-20 lg:py-24">
+      <div className="section-reveal mx-auto grid w-full max-w-[1120px] items-center gap-16 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-x-28 lg:py-28">
         <img
           src="/monitoring.svg"
           width="741"
           height="895"
           alt="Phone showing an 80 percent fill level and a weekly pickup chart"
-          className="mx-auto w-full max-w-[520px]"
+          className="mx-auto w-full max-w-[440px]"
         />
-        <div className="lg:pl-6">
+        <div className="lg:max-w-md lg:justify-self-end lg:pr-2">
           <FillGauge />
-          <FeatureTitle>
+          <FeatureTitle className="mt-10">
             Smart Bin
             <br />
             Monitoring
           </FeatureTitle>
-          <FeatureCopy>Fill level monitoring right from your phone.</FeatureCopy>
+          <FeatureCopy className="mt-6">Fill level monitoring right from your phone.</FeatureCopy>
         </div>
       </div>
 
@@ -108,28 +108,28 @@ export default function Features() {
         />
       </div>
 
-      <div className="section-reveal mx-auto grid w-full max-w-[1120px] items-center gap-12 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-8 lg:py-24">
+      <div className="section-reveal mx-auto grid w-full max-w-[1120px] items-center gap-16 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-x-28 lg:py-28">
         <img
           src="/pickup.svg"
           width="741"
           height="895"
           alt="Hands holding a phone open to scheduled and past pickups"
-          className="mx-auto w-full max-w-[520px]"
+          className="mx-auto w-full max-w-[440px]"
         />
-        <div className="lg:pl-8">
+        <div className="lg:max-w-md lg:justify-self-end lg:pr-2">
           <img
             src="/schedule.svg"
             width="223"
             height="158"
             alt="Schedule pickup calendar for November 16 and 17"
-            className="mb-8 w-52"
+            className="mx-auto w-52 lg:mx-0"
           />
-          <FeatureTitle>
+          <FeatureTitle className="mt-10">
             Pickup
             <br />
             Scheduling
           </FeatureTitle>
-          <FeatureCopy>Request pickups whenever your bin is full</FeatureCopy>
+          <FeatureCopy className="mt-6">Request pickups whenever your bin is full</FeatureCopy>
         </div>
       </div>
 

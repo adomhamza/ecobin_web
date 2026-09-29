@@ -2,9 +2,9 @@ import { LuArrowRight } from 'react-icons/lu'
 
 export default function Hero() {
   return (
-    <section className="mx-auto grid w-full max-w-[1120px] items-center gap-10 px-5 pt-4 pb-16 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:pt-2 lg:pb-24">
+    <section className="mx-auto grid w-full max-w-[1120px] items-center gap-10 px-5 pt-12 pb-16 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:pt-16 lg:pb-24">
       <div>
-        <h1 className="hero-reveal text-[3.15rem] leading-[0.98] font-extrabold tracking-[-0.035em] text-ink sm:text-7xl">
+        <h1 className="hero-reveal text-[3.15rem] leading-[0.98] font-extrabold tracking-[-0.035em] text-black sm:text-7xl">
           Waste
           <br />
           management,
@@ -30,8 +30,10 @@ export default function Hero() {
             alt=""
             className="h-10 w-auto shrink-0"
           />
-          <p className="max-w-[220px] text-sm leading-snug text-muted">
-            Trusted by households & organizations building cleaner environment.
+          <p className="max-w-[16rem] text-sm leading-snug text-muted">
+            Trusted by households &
+            <br />
+            organizations building cleaner environment.
           </p>
         </div>
       </div>

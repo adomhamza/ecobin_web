@@ -51,7 +51,7 @@ export default function App() {
 
   return (
     <div ref={root} id="top">
-      <div className="hero-surface">
+      <div className="hero-surface pb-10 lg:pb-16">
         <SiteHeader />
         <Hero />
       </div>
