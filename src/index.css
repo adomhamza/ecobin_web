@@ -18,4 +18,44 @@
 
 @theme {
   --font-sans: 'Geist', ui-sans-serif, system-ui, sans-serif;
+  --color-brand: #16a34a;
+  --color-brand-dark: #12853d;
+  --color-ink: #101828;
+  --color-muted: #5d6b7b;
+  --color-pink: #f6d4f4;
+  --color-canvas: #f4f6f8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #bbf7d0;
+  color: #052e16;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 3px;
+}
+
+.hero-surface {
+  background:
+    radial-gradient(980px 640px at 88% 8%, #b6e89a 0%, rgb(182 232 154 / 0) 58%),
+    linear-gradient(180deg, #fff 0%, #f4fbf0 46%, #fff 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
