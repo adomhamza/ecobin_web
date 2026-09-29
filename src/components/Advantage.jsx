@@ -34,7 +34,7 @@ export default function Advantage() {
               width="549"
               height="375"
               alt="Yellow, green, and red recycling bins on a paved street"
-              className="aspect-[16/10] w-full rounded-2xl object-cover"
+              className="w-full rounded-2xl"
             />
             <h3 className="mt-6 px-2 text-2xl font-bold">Ecobin Solution</h3>
             <ul className="mt-4 space-y-3 px-2 pb-3">
@@ -62,7 +62,7 @@ export default function Advantage() {
               width="549"
               height="375"
               alt="An overflowing public bin against a stone wall"
-              className="mt-6 aspect-[16/10] w-full rounded-2xl object-cover"
+              className="mt-6 w-full rounded-2xl"
             />
           </article>
         </div>

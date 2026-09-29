@@ -21,7 +21,7 @@ function FeatureTitle({ children, className = '' }) {
 }
 
 function FeatureCopy({ children }) {
-  return <p className="mt-4 max-w-xs text-lg leading-relaxed text-muted">{children}</p>
+  return <p className="mt-4 max-w-sm text-lg leading-relaxed text-muted">{children}</p>
 }
 
 function FillGauge() {
@@ -30,7 +30,7 @@ function FillGauge() {
   const progress = 0.2
 
   return (
-    <div className="w-44">
+    <div className="mx-auto w-44 lg:mx-0">
       <svg viewBox="0 0 200 118" className="w-full" aria-hidden="true">
         <path
           d="M22 104 A78 78 0 0 1 178 104"
