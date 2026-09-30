@@ -3,6 +3,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useRef } from 'react'
 import Advantage from './components/Advantage.jsx'
+import BackToTop from './components/BackToTop.jsx'
 import Community from './components/Community.jsx'
 import Contact from './components/Contact.jsx'
 import DownloadCta from './components/DownloadCta.jsx'
@@ -98,6 +99,7 @@ export default function App() {
         <DownloadCta />
       </main>
       <SiteFooter />
+      <BackToTop />
     </div>
   )
 }
