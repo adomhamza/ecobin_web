@@ -64,8 +64,8 @@ export default function DownloadCta() {
           opacity="0.35"
         />
       </svg>
-      <div className="section-reveal relative mx-auto flex w-full max-w-[1120px] flex-col gap-8 px-5 py-14 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:py-16">
-        <div>
+      <div className="relative mx-auto flex w-full max-w-[1120px] flex-col gap-8 px-5 py-14 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:py-16">
+        <div className="motion-from-left">
           <h2 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
             Download our app
             <br />
@@ -75,7 +75,7 @@ export default function DownloadCta() {
             Join the EcoBin family and enjoy our experience.
           </p>
         </div>
-        <div className="flex flex-col gap-3 sm:flex-row">
+        <div className="motion-from-right flex flex-col gap-3 sm:flex-row">
           <StoreLink
             href="https://www.apple.com/app-store/"
             icon={<FaApple className="size-7" aria-hidden="true" />}

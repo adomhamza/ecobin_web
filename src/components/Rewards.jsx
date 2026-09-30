@@ -4,13 +4,15 @@ import { Eyebrow } from './Features.jsx'
 export default function Rewards() {
   return (
     <section id="rewards" className="scroll-mt-24 bg-white pb-8">
-      <div className="section-reveal mx-auto w-full max-w-[1120px] px-5 sm:px-6">
-        <Eyebrow>Our features</Eyebrow>
-        <h2 className="mx-auto mt-4 max-w-3xl text-center text-4xl leading-[1.08] font-extrabold tracking-tight sm:text-5xl">
-          Don’t just schedule pickups, get excited and earn.
-        </h2>
+      <div className="mx-auto w-full max-w-[1120px] px-5 sm:px-6">
+        <div className="section-reveal">
+          <Eyebrow>Our features</Eyebrow>
+          <h2 className="mx-auto mt-4 max-w-3xl text-center text-4xl leading-[1.08] font-extrabold tracking-tight sm:text-5xl">
+            Don’t just schedule pickups, get excited and earn.
+          </h2>
+        </div>
 
-        <div className="mt-14 grid items-center gap-10 rounded-[32px] bg-pink px-6 py-10 sm:px-10 lg:grid-cols-[1fr_1.05fr] lg:px-14 lg:py-12">
+        <div className="motion-card mt-14 grid items-center gap-10 rounded-[32px] bg-pink px-6 py-10 sm:px-10 lg:grid-cols-[1fr_1.05fr] lg:px-14 lg:py-12">
           <div>
             <h3 className="text-4xl font-extrabold tracking-tight sm:text-5xl">Enjoy rewards</h3>
             <p className="mt-4 max-w-sm text-lg leading-relaxed text-slate-600">

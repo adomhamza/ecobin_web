@@ -41,7 +41,7 @@ export default function Hero() {
         width="520"
         height="754"
         alt="EcoBin home screen with bin fill levels and pickup requests"
-        className="hero-reveal mx-auto w-full max-w-[440px] drop-shadow-2xl"
+        className="hero-media mx-auto w-full max-w-[440px] drop-shadow-2xl"
       />
     </section>
   )

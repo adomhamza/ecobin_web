@@ -75,14 +75,16 @@ export default function Contact() {
 
   return (
     <section id="contact" className="scroll-mt-24 bg-white">
-      <div className="section-reveal mx-auto w-full max-w-[1120px] px-5 py-8 pb-16 sm:px-6">
+      <div className="mx-auto w-full max-w-[1120px] px-5 py-8 pb-16 sm:px-6">
+        <div className="section-reveal">
         <p className="text-center text-slate-500">Still have a question</p>
         <h2 className="mt-2 text-center text-4xl font-extrabold tracking-tight sm:text-5xl">
           Let’s Get in touch
         </h2>
+        </div>
 
-        <div className="mt-10 grid gap-5 lg:grid-cols-[0.82fr_1.18fr]">
-          <div className="flex h-full flex-col rounded-[28px] bg-[#f4f6fb] p-8 sm:p-10">
+        <div data-motion-group className="mt-10 grid gap-5 lg:grid-cols-[0.82fr_1.18fr]">
+          <div className="motion-card flex h-full flex-col rounded-[28px] bg-[#f4f6fb] p-8 sm:p-10">
             <h3 className="text-3xl font-bold tracking-tight sm:text-4xl">How to reach us?</h3>
             <ul className="mt-auto space-y-6 pt-16">
               <li>
@@ -109,7 +111,7 @@ export default function Contact() {
             </ul>
           </div>
 
-          <div className="rounded-[28px] bg-[#f4f6fb] p-6 sm:p-8">
+          <div className="motion-card rounded-[28px] bg-[#f4f6fb] p-6 sm:p-8">
             {sent ? (
               <div className="flex h-full min-h-72 flex-col justify-center">
                 <h3 className="text-2xl font-bold">Message sent</h3>

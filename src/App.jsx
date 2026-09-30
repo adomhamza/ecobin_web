@@ -23,28 +23,60 @@ export default function App() {
     () => {
       const motion = gsap.matchMedia()
       motion.add('(prefers-reduced-motion: no-preference)', () => {
-        gsap.from('.hero-reveal', {
-          y: 28,
-          autoAlpha: 0,
-          duration: 0.85,
-          stagger: 0.1,
-          ease: 'power3.out',
-        })
+        const ease = 'power3.out'
 
-        gsap.utils.toArray('.section-reveal').forEach((section) => {
-          gsap.from(section, {
-            y: 36,
+        gsap
+          .timeline({ defaults: { ease, duration: 0.85 } })
+          .from('.hero-reveal', { y: 32, autoAlpha: 0, stagger: 0.12 })
+          .from('.hero-media', { x: 48, autoAlpha: 0, duration: 1.05 }, 0.15)
+
+        const fadeUp = (targets, extra = {}) => {
+          gsap.utils.toArray(targets).forEach((element) => {
+            gsap.from(element, {
+              y: 36,
+              autoAlpha: 0,
+              duration: 0.8,
+              ease,
+              scrollTrigger: {
+                trigger: element,
+                start: 'top 88%',
+                once: true,
+              },
+              ...extra,
+            })
+          })
+        }
+
+        fadeUp('.section-reveal')
+        fadeUp('.motion-from-left', { x: -64, y: 20, duration: 1 })
+        fadeUp('.motion-from-right', { x: 64, y: 20, duration: 1 })
+        fadeUp(
+          gsap.utils.toArray('.motion-card').filter((card) => !card.closest('[data-motion-group]')),
+          { y: 56, duration: 0.95 },
+        )
+
+        gsap.utils.toArray('[data-motion-group]').forEach((group) => {
+          const cards = group.querySelectorAll('.motion-card')
+          const rows = group.classList.contains('motion-list') ? group.children : cards
+          if (!rows.length) return
+          gsap.from(rows, {
+            y: 28,
             autoAlpha: 0,
-            duration: 0.8,
-            ease: 'power3.out',
+            duration: 0.7,
+            stagger: 0.12,
+            ease,
             scrollTrigger: {
-              trigger: section,
-              start: 'top 88%',
+              trigger: group,
+              start: 'top 84%',
               once: true,
             },
           })
         })
       })
+
+      const refresh = () => ScrollTrigger.refresh()
+      window.addEventListener('load', refresh)
+      return () => window.removeEventListener('load', refresh)
     },
     { scope: root },
   )

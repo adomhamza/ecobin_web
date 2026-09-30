@@ -34,13 +34,15 @@ export default function Faq() {
 
   return (
     <section id="faq" className="scroll-mt-24 bg-white">
-      <div className="section-reveal mx-auto w-full max-w-[760px] px-5 py-16 sm:px-6 lg:py-20">
+      <div className="mx-auto w-full max-w-[760px] px-5 py-16 sm:px-6 lg:py-20">
+        <div className="section-reveal">
         <h2 className="text-center text-4xl font-extrabold tracking-tight sm:text-[2.6rem]">
           Have a question?
         </h2>
         <p className="mt-3 text-center text-lg text-muted">We are here to answer</p>
+        </div>
 
-        <div className="mt-10 space-y-3">
+        <div data-motion-group className="motion-list mt-10 space-y-3">
           {items.map((item, index) => {
             const isOpen = open === index
             const panelId = `faq-panel-${index}`

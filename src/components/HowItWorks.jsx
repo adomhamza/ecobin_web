@@ -1,7 +1,8 @@
 export default function HowItWorks() {
   return (
     <section id="how-it-works" className="scroll-mt-24 bg-white">
-      <div className="section-reveal mx-auto w-full max-w-[1120px] px-5 py-20 sm:px-6 lg:py-28">
+      <div className="mx-auto w-full max-w-[1120px] px-5 py-20 sm:px-6 lg:py-28">
+        <div className="section-reveal">
         <h2 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl">
           See how EcoBin works
         </h2>
@@ -9,12 +10,13 @@ export default function HowItWorks() {
           Schedule garbage pickups and get on-time service. From homes to businesses,
           our system automatically detects when garbage are full.
         </p>
+        </div>
         <img
           src="/video.svg"
           width="1247"
           height="721"
           alt="Beach cleanup with a play button for the EcoBin walkthrough"
-          className="mt-10 w-full rounded-[28px]"
+          className="motion-card mt-10 w-full rounded-[28px]"
         />
       </div>
     </section>

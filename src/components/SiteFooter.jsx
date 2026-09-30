@@ -18,7 +18,7 @@ export default function SiteFooter() {
   return (
     <footer className="bg-[#121212] text-white">
       <div className="mx-auto w-full max-w-[1120px] px-5 py-10 sm:px-6">
-        <div className="rounded-[28px] bg-[#262626] px-6 py-8 sm:px-10 sm:py-10">
+        <div className="motion-card rounded-[28px] bg-[#262626] px-6 py-8 sm:px-10 sm:py-10">
           <div className="grid gap-10 md:grid-cols-2">
             <div>
               <p className="font-semibold text-white">Ecobin</p>

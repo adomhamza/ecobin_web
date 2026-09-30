@@ -64,15 +64,15 @@ export default function Features() {
         </h2>
       </div>
 
-      <div className="section-reveal mx-auto grid w-full max-w-[1120px] items-center gap-16 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-x-28 lg:py-28">
+      <div className="mx-auto grid w-full max-w-[1120px] items-center gap-16 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-x-28 lg:py-28">
         <img
           src="/monitoring.svg"
           width="741"
           height="895"
           alt="Phone showing an 80 percent fill level and a weekly pickup chart"
-          className="mx-auto w-full max-w-[440px]"
+          className="motion-from-left mx-auto w-full max-w-[440px]"
         />
-        <div className="lg:max-w-md lg:justify-self-end lg:pr-2">
+        <div className="motion-from-right lg:max-w-md lg:justify-self-end lg:pr-2">
           <FillGauge />
           <FeatureTitle className="mt-10">
             Smart Bin
@@ -83,8 +83,8 @@ export default function Features() {
         </div>
       </div>
 
-      <div className="section-reveal mx-auto grid w-full max-w-[1120px] items-center gap-12 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:py-24">
-        <div className="lg:pl-10">
+      <div className="mx-auto grid w-full max-w-[1120px] items-center gap-12 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:py-24">
+        <div className="motion-from-left lg:pl-10">
           <img
             src="/qr-scan-lzQtNGob7q.svg"
             width="111"
@@ -104,19 +104,19 @@ export default function Features() {
           width="741"
           height="895"
           alt="Someone scanning a bottle barcode with the EcoBin app"
-          className="mx-auto w-full max-w-[520px]"
+          className="motion-from-right mx-auto w-full max-w-[520px]"
         />
       </div>
 
-      <div className="section-reveal mx-auto grid w-full max-w-[1120px] items-center gap-16 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-x-28 lg:py-28">
+      <div className="mx-auto grid w-full max-w-[1120px] items-center gap-16 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-x-28 lg:py-28">
         <img
           src="/pickup.svg"
           width="741"
           height="895"
           alt="Hands holding a phone open to scheduled and past pickups"
-          className="mx-auto w-full max-w-[440px]"
+          className="motion-from-left mx-auto w-full max-w-[440px]"
         />
-        <div className="lg:max-w-md lg:justify-self-end lg:pr-2">
+        <div className="motion-from-right lg:max-w-md lg:justify-self-end lg:pr-2">
           <img
             src="/schedule.svg"
             width="223"
@@ -133,8 +133,8 @@ export default function Features() {
         </div>
       </div>
 
-      <div className="section-reveal mx-auto grid w-full max-w-[1120px] items-center gap-12 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-6 lg:py-20">
-        <div className="lg:pl-8">
+      <div className="mx-auto grid w-full max-w-[1120px] items-center gap-12 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-6 lg:py-20">
+        <div className="motion-from-left lg:pl-8">
           <FeatureTitle>
             Household
             <br />
@@ -147,7 +147,7 @@ export default function Features() {
           width="741"
           height="895"
           alt="Phone showing garbage recycled, points earned, and total pickups"
-          className="mx-auto w-full max-w-[560px]"
+          className="motion-from-right mx-auto w-full max-w-[560px]"
         />
       </div>
     </section>
