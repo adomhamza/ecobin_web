@@ -17,7 +17,7 @@ export default function Hero() {
         </p>
         <a
           href="#download"
-          className="hero-reveal mt-8 inline-flex items-center gap-2 rounded-full bg-brand px-5 py-3 text-sm font-medium text-white transition hover:bg-brand-dark"
+          className="mt-8 inline-flex items-center gap-2 rounded-full bg-brand px-5 py-3 text-sm font-medium text-white transition hover:bg-brand-dark"
         >
           Download the app
           <LuArrowRight className="size-4" aria-hidden="true" />
@@ -30,10 +30,9 @@ export default function Hero() {
             alt=""
             className="h-10 w-auto shrink-0"
           />
-          <p className="max-w-[16rem] text-sm leading-snug text-muted">
-            Trusted by households &
-            <br />
-            organizations building cleaner environment.
+          <p className="text-sm leading-snug text-muted">
+            <span className="block whitespace-nowrap">Trusted by households & organizations</span>
+            <span className="block">building cleaner environment.</span>
           </p>
         </div>
       </div>

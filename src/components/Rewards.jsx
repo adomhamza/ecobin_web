@@ -18,7 +18,7 @@ export default function Rewards() {
             </p>
             <a
               href="#download"
-              className="mt-8 inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2.5 text-sm font-medium text-white transition hover:bg-black"
+              className="mt-8 inline-flex items-center gap-2 rounded-full bg-brand px-4 py-2.5 text-sm font-medium text-white transition hover:bg-brand-dark"
             >
               Download the app
               <LuArrowRight className="size-4" aria-hidden="true" />
@@ -30,7 +30,7 @@ export default function Rewards() {
               width="233"
               height="71"
               alt="EcoEarn"
-              className="absolute -top-7 left-6 z-10 w-44 drop-shadow-sm sm:left-10"
+              className="absolute -top-7 left-0 z-10 w-44 drop-shadow-sm sm:left-2"
             />
             <img
               src="/rewards-1.svg"
