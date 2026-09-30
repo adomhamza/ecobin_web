@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { LuMapPin, LuPhone } from 'react-icons/lu'
+import { sendContactMessage } from '../lib/sendContact.js'
 
 const initial = {
   name: '',
@@ -39,18 +40,37 @@ export default function Contact() {
   const [values, setValues] = useState(initial)
   const [errors, setErrors] = useState({})
   const [sent, setSent] = useState(false)
+  const [sending, setSending] = useState(false)
+  const [formError, setFormError] = useState('')
 
   function update(event) {
     const { name, value } = event.target
     setValues((current) => ({ ...current, [name]: value }))
     setErrors((current) => ({ ...current, [name]: undefined }))
+    setFormError('')
   }
 
-  function onSubmit(event) {
+  async function onSubmit(event) {
     event.preventDefault()
     const nextErrors = validate(values)
     setErrors(nextErrors)
-    if (Object.keys(nextErrors).length === 0) setSent(true)
+    if (Object.keys(nextErrors).length > 0) return
+
+    setSending(true)
+    setFormError('')
+    try {
+      await sendContactMessage(values)
+      setSent(true)
+    } catch (error) {
+      const detail = typeof error?.text === 'string' ? error.text : ''
+      setFormError(
+        detail
+          ? detail
+          : "We couldn't send that. Email us at ecobin@gmail.com.",
+      )
+    } finally {
+      setSending(false)
+    }
   }
 
   return (
@@ -103,6 +123,7 @@ export default function Contact() {
                   onClick={() => {
                     setSent(false)
                     setValues(initial)
+                    setFormError('')
                   }}
                 >
                   Send another message
@@ -160,10 +181,12 @@ export default function Contact() {
                 </Field>
                 <button
                   type="submit"
-                  className="mt-5 rounded-full bg-brand px-5 py-2.5 text-sm font-medium text-white transition hover:bg-brand-dark"
+                  disabled={sending}
+                  className="mt-5 rounded-full bg-brand px-5 py-2.5 text-sm font-medium text-white transition hover:bg-brand-dark disabled:cursor-not-allowed disabled:opacity-70"
                 >
-                  Send Message
+                  {sending ? 'Sending…' : 'Send Message'}
                 </button>
+                {formError ? <p className="mt-3 text-sm text-red-600">{formError}</p> : null}
               </form>
             )}
           </div>
