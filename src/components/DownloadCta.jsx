@@ -29,7 +29,7 @@ function StoreLink({ href, icon, kicker, label }) {
       href={href}
       target="_blank"
       rel="noreferrer"
-      className="inline-flex min-w-[180px] items-center gap-3 rounded-xl bg-black px-4 py-2 text-white transition hover:bg-neutral-900"
+      className="inline-flex min-w-0 flex-1 items-center gap-2 rounded-xl bg-black px-3 py-2 text-white transition hover:bg-neutral-900 sm:flex-none sm:gap-3 sm:px-4 sm:min-w-[180px]"
     >
       {icon}
       <span className="text-left leading-tight">
@@ -75,7 +75,7 @@ export default function DownloadCta() {
             Join the EcoBin family and enjoy our experience.
           </p>
         </div>
-        <div className="motion-from-right flex flex-col gap-3 sm:flex-row">
+        <div className="motion-from-right flex flex-row gap-3">
           <StoreLink
             href="https://www.apple.com/app-store/"
             icon={<FaApple className="size-7" aria-hidden="true" />}
