@@ -47,20 +47,22 @@ export default function Faq() {
             return (
               <div
                 key={item.question}
-                className={`bg-[#f3f5f8] ${isOpen ? 'rounded-3xl' : 'rounded-full'}`}
+                className={`bg-[#f3f5f8] ${isOpen ? 'rounded-xl' : 'rounded-2xl'}`}
               >
                 <button
                   type="button"
-                  className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left text-[15px] font-medium text-slate-800"
+                  className="flex w-full items-center justify-between gap-4 px-5 py-3 text-left text-[15px] font-medium text-slate-800"
                   aria-expanded={isOpen}
                   aria-controls={panelId}
                   onClick={() => setOpen(isOpen ? null : index)}
                 >
                   {item.question}
-                  <LuPlus
-                    className={`size-5 shrink-0 text-slate-500 transition ${isOpen ? 'rotate-45' : ''}`}
-                    aria-hidden="true"
-                  />
+                  <span className="grid size-8 shrink-0 place-items-center rounded-full bg-[#CBD5E0]">
+                    <LuPlus
+                      className={`size-4 text-black transition ${isOpen ? 'rotate-45' : ''}`}
+                      aria-hidden="true"
+                    />
+                  </span>
                 </button>
                 <div
                   id={panelId}

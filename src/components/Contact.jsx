@@ -62,9 +62,9 @@ export default function Contact() {
         </h2>
 
         <div className="mt-10 grid gap-5 lg:grid-cols-[0.82fr_1.18fr]">
-          <div className="rounded-[28px] bg-[#f4f6fb] p-8 sm:p-10">
+          <div className="flex h-full flex-col rounded-[28px] bg-[#f4f6fb] p-8 sm:p-10">
             <h3 className="text-3xl font-bold tracking-tight sm:text-4xl">How to reach us?</h3>
-            <ul className="mt-10 space-y-6">
+            <ul className="mt-auto space-y-6 pt-16">
               <li>
                 <a href="tel:+233559681654" className="flex items-center gap-4 text-slate-800">
                   <span className="grid size-12 place-items-center rounded-full bg-brand text-white">

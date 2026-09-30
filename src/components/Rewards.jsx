@@ -30,7 +30,7 @@ export default function Rewards() {
               width="233"
               height="71"
               alt="EcoEarn"
-              className="absolute -top-7 left-0 z-10 w-44 drop-shadow-sm sm:left-2"
+              className="absolute -top-7 -left-4 z-10 w-44 drop-shadow-sm sm:-left-8"
             />
             <img
               src="/rewards-1.svg"
