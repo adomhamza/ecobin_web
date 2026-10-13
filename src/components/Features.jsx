@@ -77,12 +77,14 @@ export default function Features() {
           />
         </div>
         <div className="motion-from-right order-1 flex flex-col items-center text-center lg:order-2 lg:max-w-md lg:items-start lg:justify-self-end lg:pr-2 lg:text-left">
-          <FillGauge className="hidden lg:mx-auto lg:block" />
-          <FeatureTitle className="lg:mt-10">
-            Smart Bin
-            <br />
-            Monitoring
-          </FeatureTitle>
+          <div className="flex w-fit flex-col items-center">
+            <FillGauge className="hidden lg:block" />
+            <FeatureTitle className="lg:mt-10">
+              Smart Bin
+              <br />
+              Monitoring
+            </FeatureTitle>
+          </div>
           <FeatureCopy className="mt-4 lg:mt-6">
             Fill level monitoring right from your phone.
           </FeatureCopy>
@@ -91,18 +93,20 @@ export default function Features() {
 
       <div className="mx-auto grid w-full max-w-[1120px] items-center gap-6 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:py-24">
         <div className="motion-from-left flex flex-col items-center text-center lg:items-start lg:pl-10 lg:text-left">
-          <img
-            src="/qr-scan-lzQtNGob7q.svg"
-            width="111"
-            height="111"
-            alt=""
-            className="hidden size-16 lg:block"
-          />
-          <FeatureTitle className="lg:mt-6">
-            Ai Waste
-            <br />
-            Scanner
-          </FeatureTitle>
+          <div className="flex w-fit flex-col items-center">
+            <img
+              src="/qr-scan-lzQtNGob7q.svg"
+              width="111"
+              height="111"
+              alt=""
+              className="hidden size-16 lg:block"
+            />
+            <FeatureTitle className="lg:mt-6">
+              Ai Waste
+              <br />
+              Scanner
+            </FeatureTitle>
+          </div>
           <FeatureCopy>Scan item and know exactly where it belongs.</FeatureCopy>
         </div>
         <div className="flex w-full justify-center overflow-hidden lg:overflow-visible">
@@ -131,18 +135,20 @@ export default function Features() {
           />
         </div>
         <div className="motion-from-right order-1 flex flex-col items-center text-center lg:order-2 lg:max-w-md lg:items-start lg:justify-self-end lg:pr-2 lg:text-left">
-          <img
-            src="/schedule.svg"
-            width="223"
-            height="158"
-            alt="Schedule pickup calendar for November 16 and 17"
-            className="mx-auto hidden w-52 lg:mx-0 lg:block"
-          />
-          <FeatureTitle className="lg:mt-10">
-            Pickup
-            <br />
-            Scheduling
-          </FeatureTitle>
+          <div className="flex w-fit flex-col items-center">
+            <img
+              src="/schedule.svg"
+              width="223"
+              height="158"
+              alt="Schedule pickup calendar for November 16 and 17"
+              className="hidden w-52 lg:block"
+            />
+            <FeatureTitle className="lg:mt-10">
+              Pickup
+              <br />
+              Scheduling
+            </FeatureTitle>
+          </div>
           <FeatureCopy className="mt-4 lg:mt-6">
             Request pickups whenever your bin is full
           </FeatureCopy>
