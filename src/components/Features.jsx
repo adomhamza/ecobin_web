@@ -67,11 +67,13 @@ export default function Features() {
       <div className="mx-auto grid w-full max-w-[1120px] items-center gap-6 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-x-28 lg:py-28">
         <div className="order-2 flex w-full justify-center overflow-hidden lg:order-1 lg:overflow-visible">
           <img
-            src="/monitoring.svg"
+            src="/monitoring.webp"
             width="741"
             height="895"
             alt="Phone showing an 80 percent fill level and a weekly pickup chart"
             className="motion-from-left w-[122%] max-w-none shrink-0 lg:w-full lg:max-w-[440px]"
+            loading="lazy"
+            decoding="async"
           />
         </div>
         <div className="motion-from-right order-1 flex flex-col items-center text-center lg:order-2 lg:max-w-md lg:items-start lg:justify-self-end lg:pr-2 lg:text-left">
@@ -105,11 +107,13 @@ export default function Features() {
         </div>
         <div className="flex w-full justify-center overflow-hidden lg:overflow-visible">
           <img
-            src="/scanner.svg"
+            src="/scanner.webp"
             width="741"
             height="895"
             alt="Someone scanning a bottle barcode with the EcoBin app"
             className="motion-from-right w-[122%] max-w-none shrink-0 lg:w-full lg:max-w-[520px]"
+            loading="lazy"
+            decoding="async"
           />
         </div>
       </div>
@@ -117,11 +121,13 @@ export default function Features() {
       <div className="mx-auto grid w-full max-w-[1120px] items-center gap-6 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-x-28 lg:py-28">
         <div className="order-2 flex w-full justify-center overflow-hidden lg:order-1 lg:overflow-visible">
           <img
-            src="/pickup.svg"
+            src="/pickup.webp"
             width="741"
             height="895"
             alt="Hands holding a phone open to scheduled and past pickups"
             className="motion-from-left w-[122%] max-w-none shrink-0 lg:w-full lg:max-w-[440px]"
+            loading="lazy"
+            decoding="async"
           />
         </div>
         <div className="motion-from-right order-1 flex flex-col items-center text-center lg:order-2 lg:max-w-md lg:items-start lg:justify-self-end lg:pr-2 lg:text-left">
@@ -154,11 +160,13 @@ export default function Features() {
         </div>
         <div className="flex w-full justify-center overflow-hidden lg:overflow-visible">
           <img
-            src="/insights.svg"
+            src="/insights.webp"
             width="741"
             height="895"
             alt="Phone showing garbage recycled, points earned, and total pickups"
             className="motion-from-right w-[122%] max-w-none shrink-0 lg:w-full lg:max-w-[560px]"
+            loading="lazy"
+            decoding="async"
           />
         </div>
       </div>

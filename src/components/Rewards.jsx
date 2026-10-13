@@ -28,18 +28,22 @@ export default function Rewards() {
           </div>
           <div className="relative mx-auto w-[86%] max-w-md lg:w-full">
             <img
-              src="/rewards-2.svg"
+              src="/rewards-2.webp"
               width="233"
               height="71"
               alt="EcoEarn"
               className="absolute -top-6 -left-3 z-10 w-36 drop-shadow-sm sm:-left-6 lg:-top-7 lg:-left-8 lg:w-44"
+              loading="lazy"
+              decoding="async"
             />
             <img
-              src="/rewards-1.svg"
+              src="/rewards-1.webp"
               width="449"
               height="383"
               alt="EcoEarn screen showing 3500 points"
               className="w-full"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>

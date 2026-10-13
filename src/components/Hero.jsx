@@ -27,7 +27,7 @@ export default function Hero() {
         </a>
         <div className="hero-reveal mt-8 flex flex-col items-center gap-3 lg:flex-row lg:justify-start">
           <img
-            src="/trustedOrgs.svg"
+            src="/trustedOrgs.webp"
             width="85"
             height="42"
             alt=""
@@ -40,11 +40,13 @@ export default function Hero() {
         </div>
       </div>
       <img
-        src="/hero.svg"
+        src="/hero.webp"
         width="520"
         height="754"
         alt="EcoBin home screen with bin fill levels and pickup requests"
         className="hero-media mx-auto w-full max-w-[440px] drop-shadow-2xl"
+        fetchPriority="high"
+        decoding="async"
       />
     </section>
   )

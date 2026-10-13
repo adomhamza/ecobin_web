@@ -32,11 +32,13 @@ export default function Advantage() {
         <div id="pricing" data-motion-group className="mt-12 grid gap-5 scroll-mt-28 lg:grid-cols-2">
           <article className="motion-card rounded-[28px] bg-white p-4 text-ink sm:p-5">
             <img
-              src="/advantage-1.svg"
+              src="/advantage-1.webp"
               width="549"
               height="375"
               alt="Yellow, green, and red recycling bins on a paved street"
               className="w-full rounded-2xl"
+              loading="lazy"
+              decoding="async"
             />
             <h3 className="mt-6 px-2 text-2xl font-bold">Ecobin Solution</h3>
             <ul className="mt-4 space-y-3 px-2 pb-3">
@@ -60,11 +62,13 @@ export default function Advantage() {
               ))}
             </ul>
             <img
-              src="/advantage-2.svg"
+              src="/advantage-2.webp"
               width="549"
               height="375"
               alt="An overflowing public bin against a stone wall"
               className="mt-6 w-full rounded-2xl"
+              loading="lazy"
+              decoding="async"
             />
           </article>
         </div>

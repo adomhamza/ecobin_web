@@ -12,11 +12,13 @@ export default function HowItWorks() {
         </p>
         </div>
         <img
-          src="/video.svg"
+          src="/video.webp"
           width="1247"
           height="721"
           alt="Beach cleanup with a play button for the EcoBin walkthrough"
           className="motion-card mt-10 w-full rounded-[28px]"
+          loading="lazy"
+          decoding="async"
         />
       </div>
     </section>
