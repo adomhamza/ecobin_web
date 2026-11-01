@@ -10,7 +10,7 @@ const socials = [
 const links = [
   { label: 'Download the App', href: '#download' },
   { label: 'Services', href: '#features' },
-  { label: 'Pricing', href: '#pricing' },
+  { label: 'Pricing', href: '#faq' },
   { label: 'Reach Us', href: '#contact' },
 ]
 

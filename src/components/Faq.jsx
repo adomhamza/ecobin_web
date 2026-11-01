@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { LuPlus } from 'react-icons/lu'
+import { Eyebrow } from './Features.jsx'
 
 const items = [
   {
@@ -34,18 +35,27 @@ export default function Faq() {
 
   return (
     <section id="faq" className="scroll-mt-24 bg-white">
-      <div className="mx-auto w-full max-w-[760px] px-5 py-16 sm:px-6 lg:py-24">
+      <div className="mx-auto w-full max-w-[1160px] px-5 pt-16 sm:px-6 lg:pt-24">
+        <div className="motion-card overflow-hidden rounded-[28px]">
+          <img
+            src="/footer-img.webp"
+            width="1243"
+            height="688"
+            alt="A family outdoors with the words Cleaner and Safe world together"
+            className="w-full"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </div>
+
+      <div className="mx-auto w-full max-w-[1031px] px-5 pt-16 pb-16 sm:px-6 lg:pt-24 lg:pb-24">
         <div className="section-reveal text-center">
-          <div className="flex items-center justify-center gap-3">
-            <span className="h-px w-7 bg-brand" aria-hidden="true" />
-            <span className="rounded-md bg-brand/15 px-3 py-1 text-[13px] font-semibold tracking-[0.08em] text-brand uppercase">
-              FAQ&apos;S
-            </span>
-          </div>
+          <Eyebrow center>FAQ&apos;S</Eyebrow>
           <h2 className="mt-4 text-[40px] leading-[1.15] font-medium tracking-tight text-ink">
             Frequently asked questions
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-[16px] leading-relaxed text-ink">
+          <p className="mt-4 text-[16px] leading-relaxed whitespace-nowrap text-ink">
             Questions? We have answers. Everything you need to know before starting your EcoBin
             journey.
           </p>
@@ -56,10 +66,10 @@ export default function Faq() {
             const isOpen = open === index
             const panelId = `faq-panel-${index}`
             return (
-              <div key={item.question} className="rounded-xl bg-[#f0f3f7]">
+              <div key={item.question} className="w-full rounded-3xl bg-[#f0f3f7]">
                 <button
                   type="button"
-                  className="flex w-full cursor-pointer items-center justify-between gap-4 px-5 py-4 text-left text-[15px] font-medium text-ink"
+                  className="flex h-[88px] w-full cursor-pointer items-center justify-between gap-4 px-5 text-left text-[15px] font-medium text-ink sm:px-6"
                   aria-expanded={isOpen}
                   aria-controls={panelId}
                   onClick={() => setOpen(isOpen ? null : index)}
@@ -80,7 +90,7 @@ export default function Faq() {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="px-5 pb-5 text-[14px] leading-relaxed text-ink">{item.answer}</p>
+                    <p className="px-5 pb-5 text-[14px] leading-relaxed text-ink sm:px-6">{item.answer}</p>
                   </div>
                 </div>
               </div>

@@ -42,40 +42,24 @@ function StoreLink({ href, icon, kicker, label }) {
 
 export default function DownloadCta() {
   return (
-    <section id="download" className="relative scroll-mt-24 overflow-hidden bg-[#149445] text-white">
-      <svg
-        className="pointer-events-none absolute inset-0 h-full w-full"
-        viewBox="0 0 1200 280"
-        preserveAspectRatio="none"
-        aria-hidden="true"
-      >
-        <path
-          d="M-40 210 C 180 80, 320 300, 560 150 S 980 40, 1260 190"
-          fill="none"
-          stroke="#0d6d34"
-          strokeWidth="90"
-          opacity="0.55"
-        />
-        <path
-          d="M-20 40 C 240 180, 420 -20, 700 120 S 1040 260, 1280 60"
-          fill="none"
-          stroke="#3cbe6c"
-          strokeWidth="70"
-          opacity="0.35"
-        />
-      </svg>
-      <div className="relative mx-auto flex w-full max-w-[1120px] flex-col gap-8 px-5 py-14 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:py-16">
-        <div className="motion-from-left">
-          <h2 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
-            Download our app
-            <br />
-            today!
+    <section id="download" className="relative scroll-mt-24 overflow-hidden text-white">
+      <img
+        src="/download.svg"
+        alt=""
+        className="absolute inset-0 size-full object-cover"
+        loading="lazy"
+        decoding="async"
+      />
+      <div className="relative mx-auto flex min-h-[280px] w-full max-w-[1200px] flex-col items-center justify-center gap-8 px-5 py-20 text-center sm:px-6 lg:min-h-[320px] lg:py-24">
+        <div className="section-reveal">
+          <h2 className="text-[40px] leading-[1.15] font-medium tracking-tight whitespace-nowrap">
+            Download our app today!
           </h2>
-          <p className="mt-4 max-w-sm text-lg text-white/90">
+          <p className="mx-auto mt-4 max-w-md text-lg text-white/90">
             Join the EcoBin family and enjoy our experience.
           </p>
         </div>
-        <div className="motion-from-right flex flex-row gap-3">
+        <div className="flex flex-row justify-center gap-3">
           <StoreLink
             href="https://www.apple.com/app-store/"
             icon={<FaApple className="size-7" aria-hidden="true" />}
