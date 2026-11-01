@@ -34,34 +34,40 @@ export default function Faq() {
 
   return (
     <section id="faq" className="scroll-mt-24 bg-white">
-      <div className="mx-auto w-full max-w-[760px] px-5 py-16 sm:px-6 lg:py-20">
-        <div className="section-reveal">
-        <h2 className="text-center text-4xl font-extrabold tracking-tight sm:text-[2.6rem]">
-          Have a question?
-        </h2>
-        <p className="mt-3 text-center text-lg text-muted">We are here to answer</p>
+      <div className="mx-auto w-full max-w-[760px] px-5 py-16 sm:px-6 lg:py-24">
+        <div className="section-reveal text-center">
+          <div className="flex items-center justify-center gap-3">
+            <span className="h-px w-7 bg-brand" aria-hidden="true" />
+            <span className="rounded-md bg-brand/15 px-3 py-1 text-[13px] font-semibold tracking-[0.08em] text-brand uppercase">
+              FAQ&apos;S
+            </span>
+          </div>
+          <h2 className="mt-4 text-[40px] leading-[1.15] font-medium tracking-tight text-ink">
+            Frequently asked questions
+          </h2>
+          <p className="mx-auto mt-4 max-w-xl text-[16px] leading-relaxed text-ink">
+            Questions? We have answers. Everything you need to know before starting your EcoBin
+            journey.
+          </p>
         </div>
 
-        <div data-motion-group className="motion-list mt-10 space-y-3">
+        <div data-motion-group className="motion-list mt-10 space-y-3 lg:mt-12">
           {items.map((item, index) => {
             const isOpen = open === index
             const panelId = `faq-panel-${index}`
             return (
-              <div
-                key={item.question}
-                className={`bg-[#f3f5f8] ${isOpen ? 'rounded-xl' : 'rounded-2xl'}`}
-              >
+              <div key={item.question} className="rounded-xl bg-[#f0f3f7]">
                 <button
                   type="button"
-                  className="flex w-full items-center justify-between gap-4 px-5 py-3 text-left text-[15px] font-medium text-slate-800"
+                  className="flex w-full cursor-pointer items-center justify-between gap-4 px-5 py-4 text-left text-[15px] font-medium text-ink"
                   aria-expanded={isOpen}
                   aria-controls={panelId}
                   onClick={() => setOpen(isOpen ? null : index)}
                 >
                   {item.question}
-                  <span className="grid size-8 shrink-0 place-items-center rounded-full bg-[#CBD5E0]">
+                  <span className="grid size-8 shrink-0 place-items-center rounded-full bg-[#d5dbe4]">
                     <LuPlus
-                      className={`size-4 text-black transition ${isOpen ? 'rotate-45' : ''}`}
+                      className={`size-4 text-ink transition ${isOpen ? 'rotate-45' : ''}`}
                       aria-hidden="true"
                     />
                   </span>
@@ -74,7 +80,7 @@ export default function Faq() {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="px-5 pb-5 text-sm leading-relaxed text-muted">{item.answer}</p>
+                    <p className="px-5 pb-5 text-[14px] leading-relaxed text-ink">{item.answer}</p>
                   </div>
                 </div>
               </div>

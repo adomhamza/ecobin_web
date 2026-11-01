@@ -76,11 +76,11 @@ export default function Contact() {
   return (
     <section id="contact" className="scroll-mt-24 bg-white">
       <div className="mx-auto w-full max-w-[1120px] px-5 py-8 pb-16 sm:px-6">
-        <div className="section-reveal">
-        <p className="text-center text-slate-500">Still have a question</p>
-        <h2 className="mt-2 text-center text-4xl font-extrabold tracking-tight sm:text-5xl">
-          Let’s Get in touch
-        </h2>
+        <div className="section-reveal text-center">
+          <h2 className="text-[40px] leading-[1.15] font-medium tracking-tight text-ink">
+            Still have a question?
+          </h2>
+          <p className="mt-3 text-[16px] leading-relaxed text-ink">Let&apos;s get in touch</p>
         </div>
 
         <div data-motion-group className="mt-10 grid gap-5 lg:grid-cols-[0.82fr_1.18fr]">
