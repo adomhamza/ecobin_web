@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { LuCheck } from 'react-icons/lu'
 import { Eyebrow } from './Features.jsx'
 
 const slides = [
@@ -12,24 +13,37 @@ const slides = [
       'Discover how to avoid the common trap of throwing non-recyclable items into the recycling bin out of good intentions, keeping the overall waste stream clean.',
     ],
   },
+  {
+    image: '/monitoring.webp',
+    imageAlt: 'Phone showing an 80 percent fill level and a weekly pickup chart',
+    title: 'Smart Bin Monitoring',
+    body: 'Fill level monitoring right from your phone so you always know when a bin needs attention before it overflows.',
+    points: [
+      'Track live fill levels across household and business bins without guessing or unnecessary checks.',
+      'Plan pickups around real capacity data so collection stays timely, efficient, and less disruptive.',
+    ],
+  },
+  {
+    image: '/scanner.webp',
+    imageAlt: 'Someone scanning a bottle barcode with the EcoBin app',
+    title: 'AI Waste Scanner',
+    body: 'Scan an item and know exactly where it belongs so recycling stays accurate and contamination stays low.',
+    points: [
+      'Identify recyclables, compostables, and general waste in seconds with clear in-app guidance.',
+      'Reduce well-intentioned sorting mistakes that send recoverable materials straight to landfill.',
+    ],
+  },
+  {
+    image: '/pickup.webp',
+    imageAlt: 'Hands holding a phone open to scheduled and past pickups',
+    title: 'Pickup Scheduling',
+    body: 'Request pickups whenever your bin is full and keep collection aligned with what you actually generate.',
+    points: [
+      'Book on-demand pickups from the app instead of waiting on fixed schedules that miss your needs.',
+      'Review upcoming and past collections so households and businesses stay organised and accountable.',
+    ],
+  },
 ]
-
-function CheckIcon() {
-  return (
-    <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-brand text-white">
-      <svg viewBox="0 0 12 12" className="size-3" aria-hidden="true">
-        <path
-          d="M2.5 6.2 4.8 8.5 9.5 3.5"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
-    </span>
-  )
-}
 
 function ArrowButton({ direction, onClick, label }) {
   return (
@@ -37,7 +51,7 @@ function ArrowButton({ direction, onClick, label }) {
       type="button"
       onClick={onClick}
       aria-label={label}
-      className="flex size-11 items-center justify-center rounded-full border border-[#d0d5dd] text-ink transition hover:border-ink/40 hover:bg-white"
+      className="flex size-11 cursor-pointer items-center justify-center rounded-full border border-[#d0d5dd] text-ink transition hover:border-ink/40 hover:bg-white"
     >
       <svg viewBox="0 0 24 24" className="size-5" fill="none" aria-hidden="true">
         {direction === 'prev' ? (
@@ -80,31 +94,31 @@ export default function Solutions() {
               EcoBin&apos;s integrated waste approach
             </h2>
           </div>
-          <p className="max-w-xl text-base leading-relaxed text-muted sm:text-lg lg:pb-2">
+          <p className="max-w-xl text-[16px] leading-relaxed text-black lg:pb-2">
             EcoBin is developing an integrated approach that connects waste collection, smart
             monitoring, digital engagement and material recovery.
           </p>
         </div>
 
-        <div className="mt-12 overflow-hidden rounded-[28px] border border-[#e8eaee] bg-[#f7f8fa] lg:mt-16">
+        <div className="mt-12 overflow-hidden rounded-2xl border border-[#e8eaee] bg-[#f7f8fa] lg:mt-16">
           <div className="grid items-center gap-8 p-5 sm:p-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12 lg:p-10">
             <img
               key={slide.image}
               src={slide.image}
               alt={slide.imageAlt}
-              className="motion-from-left w-full rounded-2xl object-cover"
+              className="w-full rounded-xl object-cover"
               loading="lazy"
               decoding="async"
             />
-            <div className="motion-from-right">
+            <div>
               <h3 className="text-[32px] leading-tight font-medium tracking-tight text-ink sm:text-[36px]">
                 {slide.title}
               </h3>
-              <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">{slide.body}</p>
+              <p className="mt-4 text-[16px] leading-relaxed text-ink">{slide.body}</p>
               <ul className="mt-8 space-y-5">
                 {slide.points.map((point) => (
-                  <li key={point} className="flex gap-3 text-base leading-relaxed text-muted">
-                    <CheckIcon />
+                  <li key={point} className="flex items-center gap-3 text-[16px] leading-relaxed text-ink">
+                    <LuCheck className="size-4 shrink-0 text-brand" strokeWidth={2.5} aria-hidden="true" />
                     <span>{point}</span>
                   </li>
                 ))}

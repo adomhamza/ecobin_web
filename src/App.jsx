@@ -9,11 +9,11 @@ import Community from './components/Community.jsx'
 import Contact from './components/Contact.jsx'
 import DownloadCta from './components/DownloadCta.jsx'
 import Faq from './components/Faq.jsx'
-import Features from './components/Features.jsx'
 import Hero from './components/Hero.jsx'
 import HowItWorks from './components/HowItWorks.jsx'
 import MissionVision from './components/MissionVision.jsx'
 import Solutions from './components/Solutions.jsx'
+import WhyChooseUs from './components/WhyChooseUs.jsx'
 import Rewards from './components/Rewards.jsx'
 import SiteFooter from './components/SiteFooter.jsx'
 import SiteHeader from './components/SiteHeader.jsx'
@@ -93,9 +93,9 @@ export default function App() {
         <About />
         <MissionVision />
         <Solutions />
-        <Features />
         <Rewards />
         <Community />
+        <WhyChooseUs />
         <HowItWorks />
         <Advantage />
         <Faq />

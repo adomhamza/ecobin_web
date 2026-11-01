@@ -6,7 +6,7 @@ const links = [
   { label: 'About Us', href: '#about' },
   { label: 'Our Solutions', href: '#features' },
   { label: 'Who We Serve', href: '#community' },
-  { label: 'Why Choose Us', href: '#advantage' },
+  { label: 'Why Choose Us', href: '#why-choose' },
   { label: 'Contact Us', href: '#contact' },
 ]
 

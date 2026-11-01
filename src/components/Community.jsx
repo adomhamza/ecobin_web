@@ -63,13 +63,13 @@ export default function Community() {
           {audiences.map(({ title, body, Icon }) => (
             <article
               key={title}
-              className="motion-card rounded-2xl bg-white p-6 shadow-[0_8px_30px_rgba(16,24,40,0.06)] sm:p-7"
+              className="motion-card rounded-xl bg-white p-6 shadow-[0_8px_30px_rgba(16,24,40,0.06)] sm:p-7"
             >
-              <span className="flex size-10 items-center justify-center rounded-lg bg-brand text-white">
-                <Icon className="size-5" aria-hidden="true" />
+              <span className="flex size-14 items-center justify-center rounded-lg bg-brand text-white">
+                <Icon className="size-6" aria-hidden="true" />
               </span>
               <h3 className="mt-5 text-lg font-semibold tracking-tight text-ink">{title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted sm:text-[15px]">{body}</p>
+              <p className="mt-3 text-[14px] leading-relaxed text-ink">{body}</p>
             </article>
           ))}
         </div>
