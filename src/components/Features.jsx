@@ -57,20 +57,7 @@ function FillGauge({ className = '' }) {
 
 export default function Features() {
   return (
-    <section id="features" className="scroll-mt-24 overflow-x-hidden bg-white">
-      <div className="section-reveal mx-auto grid w-full max-w-[1200px] gap-6 px-5 pt-16 pb-8 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-end lg:gap-16 lg:pt-24">
-        <div>
-          <Eyebrow>Our Solutions</Eyebrow>
-          <h2 className="mt-4 text-[40px] leading-[1.1] font-medium tracking-tight text-ink lg:text-left">
-            EcoBin&apos;s integrated waste approach
-          </h2>
-        </div>
-        <p className="max-w-xl text-base leading-relaxed text-muted sm:text-lg lg:pb-2">
-          EcoBin is developing an integrated approach that connects waste collection, smart
-          monitoring, digital engagement and material recovery.
-        </p>
-      </div>
-
+    <section id="product-features" className="scroll-mt-24 overflow-x-hidden bg-white">
       <div className="mx-auto grid w-full max-w-[1120px] items-center gap-6 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-x-28 lg:py-28">
         <div className="order-2 flex w-full justify-center overflow-hidden lg:order-1 lg:overflow-visible">
           <img

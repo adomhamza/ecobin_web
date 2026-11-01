@@ -1,51 +1,32 @@
 import { LuArrowRight } from 'react-icons/lu'
-import { Eyebrow } from './Features.jsx'
 
 export default function Rewards() {
   return (
-    <section id="rewards" className="scroll-mt-24 bg-white pb-8">
-      <div className="mx-auto w-full max-w-[1120px] px-5 sm:px-6">
-        <div className="section-reveal">
-          <Eyebrow center>Our features</Eyebrow>
-          <h2 className="mx-auto mt-4 max-w-3xl text-center text-4xl leading-[1.08] font-extrabold tracking-tight sm:text-5xl">
-            Don’t just schedule pickups, get excited and earn.
-          </h2>
-        </div>
+    <section id="rewards" className="scroll-mt-24 bg-white px-5 py-16 sm:px-6 lg:py-20">
+      <div className="motion-card relative mx-auto flex min-h-[420px] w-full max-w-[1200px] items-center justify-center overflow-hidden rounded-[28px] px-6 py-16 text-center sm:min-h-[480px] sm:px-10 lg:min-h-[520px] lg:px-16">
+        <img
+          src="/under-solu.svg"
+          alt=""
+          className="absolute inset-0 size-full object-cover"
+          loading="lazy"
+          decoding="async"
+        />
+        <div className="absolute inset-0 bg-black/45" aria-hidden="true" />
 
-        <div className="motion-card mt-14 grid items-center gap-10 rounded-[32px] bg-pink px-6 py-10 sm:px-10 lg:grid-cols-[1fr_1.05fr] lg:px-14 lg:py-12">
-          <div>
-            <h3 className="text-4xl font-extrabold tracking-tight sm:text-5xl">Enjoy rewards</h3>
-            <p className="mt-4 max-w-sm text-lg leading-relaxed text-slate-600">
-              Read articles, watch videos to earn free pickup on your next full bin.
-            </p>
-            <a
-              href="#download"
-              className="mt-8 inline-flex items-center gap-2 rounded-full bg-black px-4 py-2.5 text-sm font-medium text-pink transition hover:bg-neutral-900"
-            >
-              Download the app
-              <LuArrowRight className="size-4" aria-hidden="true" />
-            </a>
-          </div>
-          <div className="relative mx-auto w-[86%] max-w-md lg:w-full">
-            <img
-              src="/rewards-2.webp"
-              width="233"
-              height="71"
-              alt="EcoEarn"
-              className="absolute -top-6 -left-3 z-10 w-36 drop-shadow-sm sm:-left-6 lg:-top-7 lg:-left-8 lg:w-44"
-              loading="lazy"
-              decoding="async"
-            />
-            <img
-              src="/rewards-1.webp"
-              width="449"
-              height="383"
-              alt="EcoEarn screen showing 3500 points"
-              className="w-full"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
+        <div className="relative z-10 mx-auto flex max-w-3xl flex-col items-center">
+          <h2 className="text-[40px] leading-[1.12] font-medium tracking-tight text-white">
+            Don&apos;t just Schedule pickups, get excited and earn
+          </h2>
+          <p className="mt-5 max-w-xl text-base leading-relaxed text-white/90 sm:text-lg">
+            Read articles, watch videos to earn free pickup on your next full bin
+          </p>
+          <a
+            href="#download"
+            className="mt-8 inline-flex items-center gap-2 rounded-xl bg-brand px-5 py-3 text-sm font-semibold text-white transition hover:bg-brand-dark"
+          >
+            Download the app
+            <LuArrowRight className="size-4" aria-hidden="true" />
+          </a>
         </div>
       </div>
     </section>

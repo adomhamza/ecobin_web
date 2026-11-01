@@ -13,6 +13,7 @@ import Features from './components/Features.jsx'
 import Hero from './components/Hero.jsx'
 import HowItWorks from './components/HowItWorks.jsx'
 import MissionVision from './components/MissionVision.jsx'
+import Solutions from './components/Solutions.jsx'
 import Rewards from './components/Rewards.jsx'
 import SiteFooter from './components/SiteFooter.jsx'
 import SiteHeader from './components/SiteHeader.jsx'
@@ -91,11 +92,12 @@ export default function App() {
       <main>
         <About />
         <MissionVision />
+        <Solutions />
         <Features />
         <Rewards />
+        <Community />
         <HowItWorks />
         <Advantage />
-        <Community />
         <Faq />
         <Contact />
         <DownloadCta />

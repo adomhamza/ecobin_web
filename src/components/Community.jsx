@@ -1,17 +1,77 @@
+import {
+  LuBriefcase,
+  LuGraduationCap,
+  LuHandshake,
+  LuHouse,
+  LuRecycle,
+  LuGlobe,
+} from 'react-icons/lu'
+import { Eyebrow } from './Features.jsx'
+
+const audiences = [
+  {
+    title: 'Household & Residents',
+    body: 'People seeking reliable waste collection, clearer waste management information and practical guidance on responsible disposal.',
+    Icon: LuHouse,
+  },
+  {
+    title: 'Waste collection operators',
+    body: 'Individuals and businesses that could benefit from better visibility into collection demand, more informed planning and improved operational coordination.',
+    Icon: LuHandshake,
+  },
+  {
+    title: 'Local authorities and public institutions',
+    body: 'Institutions interested in cleaner communities, improved waste management information, public education and evidence-informed sanitation initiatives.',
+    Icon: LuGlobe,
+  },
+  {
+    title: 'Recycling and material recovery businesses',
+    body: 'Organisations that collect, sort, process or repurpose recyclable and other recoverable materials.',
+    Icon: LuRecycle,
+  },
+  {
+    title: 'Businesses and commercial establishments',
+    body: 'People seeking reliable waste collection, clearer waste management information and practical guidance on responsible disposal.',
+    Icon: LuBriefcase,
+  },
+  {
+    title: 'Schools, community groups and environmental organisations',
+    body: 'Partners that can help extend environmental awareness, encourage participation and support community-based sustainability activities.',
+    Icon: LuGraduationCap,
+  },
+]
+
 export default function Community() {
   return (
-    <section id="community" className="scroll-mt-24 bg-white">
-      <div className="mx-auto w-full max-w-[1120px] px-5 pt-16 sm:px-6 lg:pt-20">
-        <div className="motion-card overflow-hidden rounded-[32px]">
-          <img
-            src="/footer-img.webp"
-            width="1243"
-            height="688"
-            alt="A family outdoors, with the words Cleaner and Safe world together"
-            className="w-full"
-            loading="lazy"
-            decoding="async"
-          />
+    <section id="community" className="scroll-mt-24 bg-[#f5f6f8]">
+      <div className="mx-auto w-full max-w-[1200px] px-5 py-16 sm:px-6 lg:py-24">
+        <div className="section-reveal mx-auto max-w-3xl text-center">
+          <Eyebrow center>Who We Serve</Eyebrow>
+          <h2 className="mt-4 text-[40px] leading-[1.15] font-medium tracking-tight text-ink">
+            Eco-Friendly Waste Solutions for Everyone
+          </h2>
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
+            Bridging the gap between modern technology and everyday disposal to deliver clean,
+            transparent, and eco-friendly waste services across entire communities.
+          </p>
+        </div>
+
+        <div
+          data-motion-group
+          className="mt-12 grid gap-5 sm:grid-cols-2 lg:mt-16 lg:grid-cols-3 lg:gap-6"
+        >
+          {audiences.map(({ title, body, Icon }) => (
+            <article
+              key={title}
+              className="motion-card rounded-2xl bg-white p-6 shadow-[0_8px_30px_rgba(16,24,40,0.06)] sm:p-7"
+            >
+              <span className="flex size-10 items-center justify-center rounded-lg bg-brand text-white">
+                <Icon className="size-5" aria-hidden="true" />
+              </span>
+              <h3 className="mt-5 text-lg font-semibold tracking-tight text-ink">{title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted sm:text-[15px]">{body}</p>
+            </article>
+          ))}
         </div>
       </div>
     </section>
