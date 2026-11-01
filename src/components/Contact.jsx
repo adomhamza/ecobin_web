@@ -88,11 +88,11 @@ export default function Contact() {
             <h3 className="text-3xl font-bold tracking-tight sm:text-4xl">How to reach us?</h3>
             <ul className="mt-auto space-y-6 pt-16">
               <li>
-                <a href="tel:+233559681654" className="flex items-center gap-4 text-slate-800">
+                <a href="tel:+233208420372" className="flex items-center gap-4 text-slate-800">
                   <span className="grid size-12 place-items-center rounded-full bg-brand text-white">
                     <LuPhone className="size-5" aria-hidden="true" />
                   </span>
-                  +233 55 968 1654
+                  +233 20 842 0372
                 </a>
               </li>
               <li>

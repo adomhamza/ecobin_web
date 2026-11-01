@@ -40,7 +40,7 @@ export default function Advantage() {
               loading="lazy"
               decoding="async"
             />
-            <h3 className="mt-6 px-2 text-2xl font-bold">Ecobin Solution</h3>
+            <h3 className="mt-6 px-2 text-2xl font-bold">EcoBin Solution</h3>
             <ul className="mt-4 space-y-3 px-2 pb-3">
               {solution.map((item) => (
                 <li key={item} className="flex items-center gap-3 text-[15px] text-slate-700">
