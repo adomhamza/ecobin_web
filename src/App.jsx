@@ -12,6 +12,7 @@ import Faq from './components/Faq.jsx'
 import Features from './components/Features.jsx'
 import Hero from './components/Hero.jsx'
 import HowItWorks from './components/HowItWorks.jsx'
+import MissionVision from './components/MissionVision.jsx'
 import Rewards from './components/Rewards.jsx'
 import SiteFooter from './components/SiteFooter.jsx'
 import SiteHeader from './components/SiteHeader.jsx'
@@ -89,6 +90,7 @@ export default function App() {
       <Hero />
       <main>
         <About />
+        <MissionVision />
         <Features />
         <Rewards />
         <HowItWorks />

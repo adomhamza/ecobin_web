@@ -2,17 +2,15 @@ export default function About() {
   return (
     <section id="about" className="scroll-mt-24 bg-white">
       <div className="mx-auto grid w-full max-w-[1200px] items-center gap-10 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:py-24">
-        <div className="motion-from-left overflow-hidden rounded-[28px] bg-[#d7e8e4]">
-          <img
-            src="/pickup.webp"
-            width="741"
-            height="895"
-            alt="Hands holding a phone open to EcoBin pickup schedules"
-            className="mx-auto w-full max-w-[560px]"
-            loading="lazy"
-            decoding="async"
-          />
-        </div>
+        <img
+          src="/pickup.webp"
+          width="741"
+          height="895"
+          alt="Hands holding a phone open to EcoBin pickup schedules"
+          className="motion-from-left w-full rounded-[28px]"
+          loading="lazy"
+          decoding="async"
+        />
 
         <div className="motion-from-right">
           <p className="section-reveal text-sm font-bold tracking-[0.08em] text-brand uppercase">

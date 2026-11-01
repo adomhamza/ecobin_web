@@ -6,7 +6,7 @@ export default function Rewards() {
     <section id="rewards" className="scroll-mt-24 bg-white pb-8">
       <div className="mx-auto w-full max-w-[1120px] px-5 sm:px-6">
         <div className="section-reveal">
-          <Eyebrow>Our features</Eyebrow>
+          <Eyebrow center>Our features</Eyebrow>
           <h2 className="mx-auto mt-4 max-w-3xl text-center text-4xl leading-[1.08] font-extrabold tracking-tight sm:text-5xl">
             Don’t just schedule pickups, get excited and earn.
           </h2>

@@ -1,10 +1,11 @@
-function Eyebrow({ children, light = false }) {
+function Eyebrow({ children, light = false, center = false }) {
   return (
     <p
-      className={`text-center text-[13px] font-medium tracking-[0.18em] uppercase ${
-        light ? 'text-white/70' : 'text-slate-500'
-      }`}
+      className={`flex items-center gap-3 text-[13px] font-semibold tracking-[0.12em] uppercase ${
+        center ? 'justify-center' : 'justify-start'
+      } ${light ? 'text-white/70' : 'text-brand'}`}
     >
+      <span className={`h-px w-7 ${light ? 'bg-white/70' : 'bg-brand'}`} aria-hidden="true" />
       {children}
     </p>
   )
@@ -57,11 +58,17 @@ function FillGauge({ className = '' }) {
 export default function Features() {
   return (
     <section id="features" className="scroll-mt-24 overflow-x-hidden bg-white">
-      <div className="section-reveal mx-auto w-full max-w-[1120px] px-5 pt-10 pb-8 sm:px-6">
-        <Eyebrow>Our features</Eyebrow>
-        <h2 className="mx-auto mt-4 max-w-3xl text-center text-4xl leading-[1.05] font-extrabold tracking-tight sm:text-5xl">
-          Everything you need for smarter waste management
-        </h2>
+      <div className="section-reveal mx-auto grid w-full max-w-[1200px] gap-6 px-5 pt-16 pb-8 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-end lg:gap-16 lg:pt-24">
+        <div>
+          <Eyebrow>Our Solutions</Eyebrow>
+          <h2 className="mt-4 text-[40px] leading-[1.1] font-medium tracking-tight text-ink lg:text-left">
+            EcoBin&apos;s integrated waste approach
+          </h2>
+        </div>
+        <p className="max-w-xl text-base leading-relaxed text-muted sm:text-lg lg:pb-2">
+          EcoBin is developing an integrated approach that connects waste collection, smart
+          monitoring, digital engagement and material recovery.
+        </p>
       </div>
 
       <div className="mx-auto grid w-full max-w-[1120px] items-center gap-6 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-x-28 lg:py-28">
