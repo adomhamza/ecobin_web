@@ -32,8 +32,8 @@ export default function SiteHeader() {
     <header
       className={`sticky top-0 z-50 border-b transition-colors ${
         scrolled || open
-          ? 'border-slate-200/80 bg-white/95 backdrop-blur-xl'
-          : 'border-transparent bg-white'
+          ? 'border-white/40 bg-white/55 shadow-[0_8px_30px_rgba(16,24,40,0.06)] backdrop-blur-2xl'
+          : 'border-white/20 bg-white/40 backdrop-blur-xl'
       }`}
     >
       <div className="mx-auto flex w-full max-w-[1200px] items-center gap-4 px-5 py-3.5 sm:px-6">
@@ -73,7 +73,7 @@ export default function SiteHeader() {
       </div>
 
       {open ? (
-        <div className="border-t border-slate-200 bg-white px-5 py-4 lg:hidden">
+        <div className="border-t border-white/30 bg-white/50 px-5 py-4 backdrop-blur-2xl lg:hidden">
           <nav className="flex flex-col gap-1">
             {links.map((link) => (
               <a

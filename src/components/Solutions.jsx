@@ -106,7 +106,7 @@ export default function Solutions() {
               key={slide.image}
               src={slide.image}
               alt={slide.imageAlt}
-              className="w-full rounded-xl object-cover"
+              className="h-auto w-full rounded-xl object-contain"
               loading="lazy"
               decoding="async"
             />
