@@ -13,6 +13,7 @@ import Hero from './components/Hero.jsx'
 import HowItWorks from './components/HowItWorks.jsx'
 import MissionVision from './components/MissionVision.jsx'
 import Solutions from './components/Solutions.jsx'
+import Sdg from './components/Sdg.jsx'
 import WhyChooseUs from './components/WhyChooseUs.jsx'
 import Rewards from './components/Rewards.jsx'
 import SiteFooter from './components/SiteFooter.jsx'
@@ -96,6 +97,7 @@ export default function App() {
         <Rewards />
         <Community />
         <WhyChooseUs />
+        <Sdg />
         <HowItWorks />
         <Advantage />
         <Faq />

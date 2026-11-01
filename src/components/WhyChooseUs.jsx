@@ -35,7 +35,7 @@ export default function WhyChooseUs() {
           <ol className="mt-10 space-y-6">
             {priorities.map((item, index) => (
               <li key={item.title} className="flex gap-4">
-                <span className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-brand text-sm font-semibold text-white">
+                <span className="flex size-14 shrink-0 items-center justify-center rounded-lg bg-brand text-lg font-semibold text-white">
                   {index + 1}
                 </span>
                 <div>
@@ -50,7 +50,7 @@ export default function WhyChooseUs() {
         <img
           src="/why-choose.svg"
           alt="Phone showing EcoBin fill level and weekly pickup insights"
-          className="motion-from-right w-full rounded-xl object-cover"
+          className="motion-from-right h-[561px] w-full rounded-xl object-cover"
           loading="lazy"
           decoding="async"
         />
