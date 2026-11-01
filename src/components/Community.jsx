@@ -1,6 +1,6 @@
 export default function Community() {
   return (
-    <section className="bg-white">
+    <section id="community" className="scroll-mt-24 bg-white">
       <div className="mx-auto w-full max-w-[1120px] px-5 pt-16 sm:px-6 lg:pt-20">
         <div className="motion-card overflow-hidden rounded-[32px]">
           <img

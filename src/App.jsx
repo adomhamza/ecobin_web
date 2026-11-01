@@ -2,6 +2,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useRef } from 'react'
+import About from './components/About.jsx'
 import Advantage from './components/Advantage.jsx'
 import BackToTop from './components/BackToTop.jsx'
 import Community from './components/Community.jsx'
@@ -84,11 +85,10 @@ export default function App() {
 
   return (
     <div ref={root} id="top">
-      <div className="hero-surface pb-10 lg:pb-16">
-        <SiteHeader />
-        <Hero />
-      </div>
+      <SiteHeader />
+      <Hero />
       <main>
+        <About />
         <Features />
         <Rewards />
         <HowItWorks />
