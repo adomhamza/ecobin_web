@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-[#0b1a12] text-white">
       <img
-        src="/hero-bg.svg"
+        src="/hero-bg.webp"
         alt=""
         className="pointer-events-none absolute inset-0 size-full object-cover"
         aria-hidden="true"
@@ -21,6 +21,7 @@ export default function Hero() {
               height="42"
               alt=""
               className="h-10 w-auto shrink-0"
+              aria-hidden="true"
             />
             <p className="max-w-sm text-sm leading-snug text-white/80 sm:max-w-md">
               Trusted by households & organizations building cleaner environment.

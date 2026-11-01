@@ -25,7 +25,9 @@ export default function MissionVision() {
             </p>
           </div>
           <img
-            src="/our-mission.svg"
+            src="/our-mission.webp"
+            width="1200"
+            height="801"
             alt="People holding recycling, water, plant, and earth cutouts"
             className="motion-from-right w-full rounded-2xl"
             loading="lazy"
@@ -37,7 +39,9 @@ export default function MissionVision() {
       <section id="vision" className="scroll-mt-24 bg-white">
         <div className="mx-auto grid w-full max-w-[1200px] items-center gap-10 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:py-20">
           <img
-            src="/our-vision.svg"
+            src="/our-vision.webp"
+            width="1200"
+            height="801"
             alt="Neon recycling symbol with a green heart of moss at the center"
             className="motion-from-left order-2 w-full rounded-2xl lg:order-1"
             loading="lazy"
@@ -86,7 +90,9 @@ export default function MissionVision() {
             </div>
           </div>
           <img
-            src="/value-approach.svg"
+            src="/value-approach.webp"
+            width="1200"
+            height="800"
             alt="EcoBin team collaborating around a conference table"
             className="motion-from-right w-full rounded-2xl"
             loading="lazy"

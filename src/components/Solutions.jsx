@@ -4,7 +4,7 @@ import { Eyebrow } from './Features.jsx'
 
 const slides = [
   {
-    image: '/solution.svg',
+    image: '/solution.webp',
     imageAlt: 'Hands holding a phone open to the EcoBin waste digital guide',
     title: 'Waste Digital Guide',
     body: 'Learn simple, proactive steps to properly rinse and prepare materials, ensuring your waste actually gets recycled instead of landfilled on our app.',
@@ -105,6 +105,8 @@ export default function Solutions() {
             <img
               key={slide.image}
               src={slide.image}
+              width="541"
+              height="470"
               alt={slide.imageAlt}
               className="h-auto w-full rounded-xl object-contain"
               loading="lazy"

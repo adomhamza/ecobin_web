@@ -38,7 +38,7 @@ export default function SiteHeader() {
     >
       <div className="mx-auto flex w-full max-w-[1200px] items-center gap-4 px-5 py-3.5 sm:px-6">
         <a href="#top" className="flex shrink-0 items-center gap-2">
-          <img src="/logo.svg" width="33" height="33" alt="" className="size-8" />
+          <img src="/logo.svg" width="33" height="33" alt="" className="size-8" aria-hidden="true" />
           <span className="text-lg font-semibold tracking-tight text-ink">EcoBin</span>
         </a>
 
