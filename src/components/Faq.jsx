@@ -52,10 +52,10 @@ export default function Faq() {
       <div className="mx-auto w-full max-w-[1031px] px-5 pt-16 pb-16 sm:px-6 lg:pt-24 lg:pb-24">
         <div className="section-reveal text-center">
           <Eyebrow center>FAQ&apos;S</Eyebrow>
-          <h2 className="mt-4 text-[40px] leading-[1.15] font-medium tracking-tight text-ink">
+          <h2 className="mt-4 text-[32px] leading-[1.15] font-medium tracking-tight text-ink sm:text-[40px]">
             Frequently asked questions
           </h2>
-          <p className="mt-4 text-[16px] leading-relaxed whitespace-nowrap text-ink">
+          <p className="mx-auto mt-4 max-w-xl text-[16px] leading-relaxed text-ink lg:max-w-none lg:whitespace-nowrap">
             Questions? We have answers. Everything you need to know before starting your EcoBin
             journey.
           </p>
@@ -69,7 +69,7 @@ export default function Faq() {
               <div key={item.question} className="w-full rounded-3xl bg-[#f0f3f7]">
                 <button
                   type="button"
-                  className="flex h-[88px] w-full cursor-pointer items-center justify-between gap-4 px-5 text-left text-[15px] font-medium text-ink sm:px-6"
+                  className="flex min-h-[72px] w-full cursor-pointer items-center justify-between gap-4 px-5 py-4 text-left text-[15px] font-medium text-ink sm:min-h-[88px] sm:px-6 sm:py-0"
                   aria-expanded={isOpen}
                   aria-controls={panelId}
                   onClick={() => setOpen(isOpen ? null : index)}

@@ -29,12 +29,12 @@ function StoreLink({ href, icon, kicker, label }) {
       href={href}
       target="_blank"
       rel="noreferrer"
-      className="inline-flex min-w-0 flex-1 items-center gap-2 rounded-xl bg-black px-3 py-2 text-white transition hover:bg-neutral-900 sm:flex-none sm:gap-3 sm:px-4 sm:min-w-[180px]"
+      className="inline-flex min-w-0 flex-1 items-center justify-center gap-2 rounded-xl bg-black px-3 py-2.5 text-white transition hover:bg-neutral-900 sm:flex-none sm:gap-3 sm:px-4 sm:py-2"
     >
-      {icon}
-      <span className="text-left leading-tight">
-        <span className="block text-[10px] tracking-wide uppercase">{kicker}</span>
-        <span className="block text-lg font-semibold">{label}</span>
+      <span className="shrink-0">{icon}</span>
+      <span className="min-w-0 text-left leading-tight">
+        <span className="block truncate text-[10px] tracking-wide uppercase">{kicker}</span>
+        <span className="block truncate text-base font-semibold sm:text-lg">{label}</span>
       </span>
     </a>
   )
@@ -52,14 +52,14 @@ export default function DownloadCta() {
       />
       <div className="relative mx-auto flex min-h-[280px] w-full max-w-[1200px] flex-col items-center justify-center gap-8 px-5 py-20 text-center sm:px-6 lg:min-h-[320px] lg:py-24">
         <div className="section-reveal">
-          <h2 className="text-[40px] leading-[1.15] font-medium tracking-tight whitespace-nowrap">
+          <h2 className="text-[32px] leading-[1.15] font-medium tracking-tight sm:text-[40px] sm:whitespace-nowrap">
             Download our app today!
           </h2>
           <p className="mx-auto mt-4 max-w-md text-lg text-white/90">
             Join the EcoBin family and enjoy our experience.
           </p>
         </div>
-        <div className="flex flex-row justify-center gap-3">
+        <div className="flex w-full max-w-lg flex-row gap-3 sm:w-auto sm:max-w-none">
           <StoreLink
             href="https://www.apple.com/app-store/"
             icon={<FaApple className="size-7" aria-hidden="true" />}

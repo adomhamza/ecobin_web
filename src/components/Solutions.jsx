@@ -90,7 +90,7 @@ export default function Solutions() {
         <div className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-end lg:gap-16">
           <div>
             <Eyebrow>Our Solutions</Eyebrow>
-            <h2 className="mt-4 text-[40px] leading-[1.1] font-medium tracking-tight text-ink">
+            <h2 className="mt-4 text-[32px] leading-[1.1] font-medium tracking-tight text-ink sm:text-[40px]">
               EcoBin&apos;s integrated waste approach
             </h2>
           </div>
@@ -111,7 +111,7 @@ export default function Solutions() {
               decoding="async"
             />
             <div>
-              <h3 className="text-[32px] leading-tight font-medium tracking-tight text-ink sm:text-[36px]">
+              <h3 className="text-[28px] leading-tight font-medium tracking-tight text-ink sm:text-[36px]">
                 {slide.title}
               </h3>
               <p className="mt-4 text-[16px] leading-relaxed text-ink">{slide.body}</p>

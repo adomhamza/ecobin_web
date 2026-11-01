@@ -25,7 +25,7 @@ export default function WhyChooseUs() {
       <div className="mx-auto grid w-full max-w-[1200px] items-center gap-10 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:py-24">
         <div className="motion-from-left">
           <Eyebrow>Why Choose Us?</Eyebrow>
-          <h2 className="mt-4 text-[40px] leading-[1.15] font-medium tracking-tight text-ink">
+          <h2 className="mt-4 text-[32px] leading-[1.15] font-medium tracking-tight text-ink sm:text-[40px]">
             We&apos;re Not Just Evolving the System. We&apos;re Redefining It.
           </h2>
           <p className="mt-5 text-[16px] leading-relaxed text-ink">
@@ -50,7 +50,7 @@ export default function WhyChooseUs() {
         <img
           src="/why-choose.svg"
           alt="Phone showing EcoBin fill level and weekly pickup insights"
-          className="motion-from-right h-[561px] w-full rounded-xl object-cover"
+          className="motion-from-right h-auto max-h-[420px] w-full rounded-xl object-cover sm:max-h-none lg:h-[561px]"
           loading="lazy"
           decoding="async"
         />

@@ -40,7 +40,7 @@ const goals = [
 
 function GoalCard({ title, body, icon }) {
   return (
-    <article className="motion-card mx-auto h-auto min-h-[264px] w-full max-w-[292px] rounded-xl bg-[#282828] p-6 sm:p-7">
+    <article className="motion-card mx-auto h-auto min-h-0 w-full max-w-[292px] rounded-xl bg-[#282828] p-6 sm:min-h-[264px] sm:p-7">
       <img
         src={icon}
         alt=""
@@ -63,7 +63,7 @@ export default function Sdg() {
       <div className="mx-auto w-full max-w-[1200px] px-5 py-16 sm:px-6 lg:py-24">
         <div className="section-reveal mx-auto max-w-3xl text-center">
           <Eyebrow center>Sustainable Development Goals</Eyebrow>
-          <h2 className="mt-4 text-[40px] leading-[1.15] font-medium tracking-tight text-white">
+          <h2 className="mt-4 text-[32px] leading-[1.15] font-medium tracking-tight text-white sm:text-[40px]">
             Cleaner communities, aligned with global goals
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-[16px] leading-relaxed text-white/70">

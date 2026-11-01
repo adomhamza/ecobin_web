@@ -14,7 +14,7 @@ export default function MissionVision() {
         <div className="mx-auto grid w-full max-w-[1200px] items-center gap-10 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:py-20">
           <div className="motion-from-left">
             <SectionLabel>Our Mission</SectionLabel>
-            <h2 className="mt-5 text-[40px] leading-[1.15] font-medium tracking-tight text-ink">
+            <h2 className="mt-5 text-[32px] leading-[1.15] font-medium tracking-tight text-ink sm:text-[40px]">
               Empower Sustainable Communities Through Intelligent Waste Management & Resource
               Recovery
             </h2>
@@ -45,7 +45,7 @@ export default function MissionVision() {
           />
           <div className="motion-from-right order-1 lg:order-2">
             <SectionLabel>Our Vision</SectionLabel>
-            <h2 className="mt-5 text-[40px] leading-[1.15] font-medium tracking-tight text-ink">
+            <h2 className="mt-5 text-[32px] leading-[1.15] font-medium tracking-tight text-ink sm:text-[40px]">
               Drive Africa&apos;s Sustainable Future Through Smart, Data-Driven Waste Management &
               Education
             </h2>
@@ -62,7 +62,7 @@ export default function MissionVision() {
         <div className="mx-auto grid w-full max-w-[1200px] items-center gap-10 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:py-24">
           <div className="motion-from-left space-y-8">
             <div>
-              <h2 className="text-[40px] font-medium tracking-tight text-ink">
+              <h2 className="text-[32px] font-medium tracking-tight text-ink sm:text-[40px]">
                 Our Values
               </h2>
               <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
@@ -74,7 +74,7 @@ export default function MissionVision() {
               </p>
             </div>
             <div>
-              <h2 className="text-[40px] font-medium tracking-tight text-ink">
+              <h2 className="text-[32px] font-medium tracking-tight text-ink sm:text-[40px]">
                 Our Approach
               </h2>
               <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">

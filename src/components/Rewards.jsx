@@ -14,7 +14,7 @@ export default function Rewards() {
         <div className="absolute inset-0 bg-black/45" aria-hidden="true" />
 
         <div className="relative z-10 mx-auto flex max-w-3xl flex-col items-center">
-          <h2 className="text-[40px] leading-[1.12] font-medium tracking-tight text-white">
+          <h2 className="text-[32px] leading-[1.12] font-medium tracking-tight text-white sm:text-[40px]">
             Don&apos;t just Schedule pickups,
             <br />
             get excited and earn
