@@ -44,11 +44,12 @@ export default function DownloadCta() {
   return (
     <section id="download" className="relative scroll-mt-24 overflow-hidden text-white">
       <img
-        src="/download.svg"
+        src="/download.webp"
         alt=""
         className="absolute inset-0 size-full object-cover"
         loading="lazy"
         decoding="async"
+        aria-hidden="true"
       />
       <div className="relative mx-auto flex min-h-[280px] w-full max-w-[1200px] flex-col items-center justify-center gap-8 px-5 py-20 text-center sm:px-6 lg:min-h-[320px] lg:py-24">
         <div className="section-reveal">
