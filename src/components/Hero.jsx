@@ -1,10 +1,10 @@
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#0b1a12] text-white">
+    <section className="relative overflow-hidden bg-white text-white">
       <img
         src="/hero-bg.webp"
         alt=""
-        className="pointer-events-none absolute inset-0 size-full object-cover"
+        className="pointer-events-none absolute inset-0 size-full object-cover object-top"
         aria-hidden="true"
       />
       <div
@@ -12,8 +12,8 @@ export default function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto grid w-full max-w-[1200px] items-center gap-10 px-5 pt-14 pb-16 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8 lg:pt-20 lg:pb-24">
-        <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
+      <div className="relative mx-auto grid w-full max-w-[1200px] items-center gap-10 px-5 pt-14 pb-0 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-end lg:gap-8 lg:pt-20">
+        <div className="flex flex-col items-center pb-16 text-center lg:items-start lg:pb-20 lg:text-left">
           <div className="hero-reveal flex flex-col items-center gap-3 sm:flex-row sm:justify-center lg:justify-start">
             <img
               src="/trustedOrgs.webp"
@@ -46,7 +46,7 @@ export default function Hero() {
             </a>
             <a
               href="#about"
-              className="inline-flex items-center rounded-lg border border-brand bg-black/70 px-5 py-3 text-sm font-semibold text-white transition hover:bg-black"
+              className="inline-flex items-center rounded-lg border border-brand bg-transparent px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
             >
               Learn more
             </a>
@@ -58,7 +58,7 @@ export default function Hero() {
           width="520"
           height="754"
           alt="EcoBin app home screen with bin stats and pickup status"
-          className="hero-media mx-auto w-full max-w-[420px] drop-shadow-2xl lg:max-w-[460px]"
+          className="hero-media mx-auto w-full max-w-[420px] lg:max-w-[460px]"
           fetchPriority="high"
           decoding="async"
         />

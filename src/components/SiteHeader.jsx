@@ -10,6 +10,47 @@ const links = [
   { label: 'Contact Us', href: '#contact' },
 ]
 
+const brandNames = ['EcoBin', 'Nature Rewards']
+
+function BrandWordmark() {
+  const [index, setIndex] = useState(0)
+  const [visible, setVisible] = useState(true)
+
+  useEffect(() => {
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (reduceMotion) return undefined
+
+    let timeoutId
+    const interval = window.setInterval(() => {
+      setVisible(false)
+      timeoutId = window.setTimeout(() => {
+        setIndex((current) => (current + 1) % brandNames.length)
+        setVisible(true)
+      }, 280)
+    }, 3200)
+
+    return () => {
+      window.clearInterval(interval)
+      window.clearTimeout(timeoutId)
+    }
+  }, [])
+
+  return (
+    <span className="relative inline-grid min-w-[8.5rem] text-lg font-semibold tracking-tight text-ink">
+      <span className="invisible col-start-1 row-start-1 whitespace-nowrap" aria-hidden="true">
+        Nature Rewards
+      </span>
+      <span
+        className={`col-start-1 row-start-1 whitespace-nowrap transition duration-300 ease-out ${
+          visible ? 'translate-y-0 opacity-100' : 'translate-y-1.5 opacity-0'
+        }`}
+      >
+        {brandNames[index]}
+      </span>
+    </span>
+  )
+}
+
 export default function SiteHeader() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
@@ -37,9 +78,9 @@ export default function SiteHeader() {
       }`}
     >
       <div className="mx-auto flex w-full max-w-[1200px] items-center gap-4 px-5 py-3.5 sm:px-6">
-        <a href="#top" className="flex shrink-0 items-center gap-2">
+        <a href="#top" className="flex shrink-0 items-center gap-2" aria-label="EcoBin home">
           <img src="/logo.svg" width="33" height="33" alt="" className="size-8" aria-hidden="true" />
-          <span className="text-lg font-semibold tracking-tight text-ink">EcoBin</span>
+          <BrandWordmark />
         </a>
 
         <nav className="hidden flex-1 items-center justify-center gap-6 lg:flex xl:gap-8">
