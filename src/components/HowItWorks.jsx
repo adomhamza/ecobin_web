@@ -3,7 +3,7 @@ import { Eyebrow } from './Features.jsx'
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="scroll-mt-24 bg-[#f7f8fa]">
+    <section id="how-it-works" className="scroll-mt-24 bg-white">
       <div className="mx-auto w-full max-w-[1160px] px-5 py-16 sm:px-6 lg:py-24">
         <div className="section-reveal mx-auto max-w-3xl text-center">
           <Eyebrow center>Let&apos;s Get Started</Eyebrow>
@@ -29,9 +29,9 @@ export default function HowItWorks() {
           <button
             type="button"
             aria-label="Play EcoBin walkthrough"
-            className="absolute top-1/2 left-1/2 flex size-16 -translate-x-1/2 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-brand text-white shadow-lg transition hover:bg-brand-dark sm:size-20"
+            className="absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 cursor-pointer items-center justify-center bg-transparent text-white transition hover:scale-105"
           >
-            <LuPlay className="size-7 fill-white sm:size-8" aria-hidden="true" />
+            <LuPlay className="size-14 fill-white drop-shadow-md sm:size-16" aria-hidden="true" />
           </button>
         </div>
       </div>
