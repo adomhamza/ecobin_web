@@ -1,0 +1,22 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.app.ecobin",
+      "sha256_cert_fingerprints": [
+        "3B:B2:FC:3A:2E:FB:AC:AD:C9:DF:B2:97:B9:A6:92:74:6F:47:2B:BE:D9:7A:3C:51:6A:89:53:F7:B5:3D:29:43"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.app.ecobin.staging",
+      "sha256_cert_fingerprints": [
+        "3B:B2:FC:3A:2E:FB:AC:AD:C9:DF:B2:97:B9:A6:92:74:6F:47:2B:BE:D9:7A:3C:51:6A:89:53:F7:B5:3D:29:43"
+      ]
+    }
+  }
+]

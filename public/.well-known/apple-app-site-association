@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "85ZN4RD98T.com.app.ecobin",
+        "paths": ["/app", "/app/*"]
+      },
+      {
+        "appID": "85ZN4RD98T.com.app.ecobin.staging",
+        "paths": ["/app", "/app/*"]
+      }
+    ]
+  }
+}
