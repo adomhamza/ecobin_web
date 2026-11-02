@@ -48,7 +48,9 @@ export default function WhyChooseUs() {
         </div>
 
         <img
-          src="/why-choose.svg"
+          src="/why-choose.webp"
+          width="541"
+          height="470"
           alt="Phone showing EcoBin fill level and weekly pickup insights"
           className="motion-from-right h-auto max-h-[420px] w-full rounded-xl object-cover sm:max-h-none lg:h-[561px]"
           loading="lazy"

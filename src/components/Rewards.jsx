@@ -5,11 +5,12 @@ export default function Rewards() {
     <section id="rewards" className="scroll-mt-24">
       <div className="motion-card relative flex min-h-[420px] w-full items-center justify-center overflow-hidden px-6 py-16 text-center sm:min-h-[480px] sm:px-10 lg:min-h-[520px] lg:px-16 lg:py-24">
         <img
-          src="/under-solu.svg"
+          src="/under-solu.webp"
           alt=""
           className="absolute inset-0 size-full object-cover"
           loading="lazy"
           decoding="async"
+          aria-hidden="true"
         />
         <div className="absolute inset-0 bg-black/45" aria-hidden="true" />
 

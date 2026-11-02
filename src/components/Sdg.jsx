@@ -4,37 +4,37 @@ const goals = [
   {
     title: 'Quality Education',
     body: 'Articles and videos in the app teach practical sorting and responsible disposal habits.',
-    icon: '/sdg/quality-ed.svg',
+    icon: '/sdg/quality-ed.webp',
   },
   {
     title: 'Clean Water and Sanitation',
     body: 'Better collection keeps waste out of drains and waterways, helping protect water sources.',
-    icon: '/sdg/clean-water.svg',
+    icon: '/sdg/clean-water.webp',
   },
   {
     title: 'Industry, Innovation and Infrastructure',
     body: 'Smart bin sensors and data-driven planning bring digital infrastructure to waste collection.',
-    icon: '/sdg/indus.svg',
+    icon: '/sdg/indus.webp',
   },
   {
     title: 'Sustainable Cities and Communities',
     body: 'Pickups planned from real bin conditions keep neighbourhoods cleaner and easier to manage.',
-    icon: '/sdg/sustainable.svg',
+    icon: '/sdg/sustainable.webp',
   },
   {
     title: 'Responsible Consumption and Production',
     body: 'Sorting guidance and rewards encourage households to separate waste so more of it can be recovered.',
-    icon: '/sdg/responsible.svg',
+    icon: '/sdg/responsible.webp',
   },
   {
     title: 'Climate Action',
     body: 'Fewer wasted truck trips and less waste sent to dumps can help lower emissions.',
-    icon: '/sdg/climate.svg',
+    icon: '/sdg/climate.webp',
   },
   {
     title: 'Partnerships for the Goals',
     body: 'We work with households, collectors, businesses and local authorities to share data and widen impact.',
-    icon: '/sdg/partnership.svg',
+    icon: '/sdg/partnership.webp',
   },
 ]
 
@@ -43,7 +43,9 @@ function GoalCard({ title, body, icon }) {
     <article className="motion-card mx-auto h-auto min-h-0 w-full max-w-[292px] rounded-xl bg-[#282828] p-6 sm:min-h-[264px] sm:p-7">
       <img
         src={icon}
-        alt=""
+        width="78"
+        height="78"
+        alt={`${title} UN Sustainable Development Goal icon`}
         className="size-[78px] rounded-md object-contain"
         loading="lazy"
         decoding="async"

@@ -87,9 +87,15 @@ export default function App() {
 
   return (
     <div ref={root} id="top">
+      <a
+        href="#main"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-[100] focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-ink focus:shadow-lg"
+      >
+        Skip to content
+      </a>
       <SiteHeader />
       <Hero />
-      <main>
+      <main id="main">
         <About />
         <MissionVision />
         <Solutions />
