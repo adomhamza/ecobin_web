@@ -51,7 +51,7 @@ export default function DownloadCta() {
         decoding="async"
         aria-hidden="true"
       />
-      <div className="relative mx-auto flex min-h-[280px] w-full max-w-[1200px] flex-col items-center justify-center gap-8 px-5 py-20 text-center sm:px-6 lg:min-h-[320px] lg:py-24">
+      <div className="relative mx-auto flex min-h-[380px] w-full max-w-[1200px] flex-col items-center justify-center gap-8 px-5 py-28 text-center sm:px-6 lg:min-h-[440px] lg:py-32">
         <div className="section-reveal">
           <h2 className="text-[32px] leading-[1.15] font-medium tracking-tight sm:text-[40px] sm:whitespace-nowrap">
             Download our app today!
