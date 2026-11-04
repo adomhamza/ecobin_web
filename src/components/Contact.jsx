@@ -77,7 +77,7 @@ export default function Contact() {
     <section id="contact" className="scroll-mt-24 bg-white">
       <div className="mx-auto w-full max-w-[1120px] px-5 py-8 pb-16 sm:px-6">
         <div className="section-reveal text-center">
-          <h2 className="text-[32px] leading-[1.15] font-medium tracking-tight text-ink sm:text-[40px]">
+          <h2 className="text-[40px] leading-[1.15] font-medium tracking-tight text-ink">
             Still have a question?
           </h2>
           <p className="mt-3 text-[16px] leading-relaxed text-ink">Let&apos;s get in touch</p>

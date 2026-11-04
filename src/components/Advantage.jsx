@@ -24,7 +24,7 @@ export default function Advantage() {
         <p className="text-center text-[13px] font-medium tracking-[0.18em] text-white/75 uppercase">
           The EcoBin advantage
         </p>
-        <h2 className="mx-auto mt-4 max-w-3xl text-center text-4xl leading-[1.08] font-extrabold tracking-tight sm:text-5xl">
+        <h2 className="mx-auto mt-4 max-w-3xl text-center text-[40px] leading-[1.08] font-extrabold tracking-tight">
           Smarter than traditional waste collection
         </h2>
         </div>

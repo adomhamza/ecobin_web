@@ -89,7 +89,7 @@ export default function Faq() {
       <div className="mx-auto w-full max-w-[1031px] px-5 pt-16 pb-16 sm:px-6 lg:pt-24 lg:pb-24">
         <div className="section-reveal text-center">
           <Eyebrow center>FAQ&apos;S</Eyebrow>
-          <h2 className="mt-4 text-[32px] leading-[1.15] font-medium tracking-tight text-ink sm:text-[40px]">
+          <h2 className="mt-4 text-[40px] leading-[1.15] font-medium tracking-tight text-ink">
             Frequently asked questions
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-[16px] leading-relaxed text-ink lg:max-w-none lg:whitespace-nowrap">

@@ -62,7 +62,7 @@ export default function Solutions() {
         <div className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-end lg:gap-16">
           <div>
             <Eyebrow>Our Solutions</Eyebrow>
-            <h2 className="mt-4 text-[32px] leading-[1.1] font-medium tracking-tight text-ink sm:text-[40px]">
+            <h2 className="mt-4 text-[40px] leading-[1.1] font-medium tracking-tight text-ink">
               EcoBin&apos;s integrated waste approach
             </h2>
           </div>
@@ -72,7 +72,7 @@ export default function Solutions() {
           </p>
         </div>
 
-        <div className="mt-12 overflow-hidden rounded-2xl border border-[#e8eaee] bg-[#f7f8fa] lg:mt-16">
+        <div className="mt-12 overflow-hidden rounded-xl border border-[#e8eaee] bg-[#f7f8fa] lg:mt-16">
           <div className="grid items-center gap-8 p-5 sm:p-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12 lg:p-10">
             <img
               key={slide.image}

@@ -17,7 +17,7 @@ export default function DownloadCta() {
       />
       <div className="relative mx-auto flex min-h-[380px] w-full max-w-[1200px] flex-col items-center justify-center gap-8 px-5 py-28 text-center sm:px-6 lg:min-h-[440px] lg:py-32">
         <div className="section-reveal">
-          <h2 className="text-[32px] leading-[1.15] font-medium tracking-tight sm:text-[40px] sm:whitespace-nowrap">
+          <h2 className="text-[40px] leading-[1.15] font-medium tracking-tight sm:whitespace-nowrap">
             Download our app today!
           </h2>
           <p className="mx-auto mt-4 max-w-md text-lg text-white/90">
