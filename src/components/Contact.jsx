@@ -85,7 +85,9 @@ export default function Contact() {
 
         <div data-motion-group className="mt-10 grid gap-5 lg:grid-cols-[0.82fr_1.18fr]">
           <div className="motion-card flex min-h-0 flex-col rounded-[28px] bg-[#f4f6fb] p-8 sm:p-10 lg:h-[597px]">
-            <h3 className="text-3xl font-bold tracking-tight sm:text-4xl">How to reach us?</h3>
+            <h3 className="text-[32px] leading-[1.15] font-bold tracking-tight sm:text-[40px]">
+              How to reach us?
+            </h3>
             <ul className="mt-auto space-y-6 pt-16">
               <li>
                 <a href="tel:+233208420372" className="flex items-center gap-4 text-slate-800">

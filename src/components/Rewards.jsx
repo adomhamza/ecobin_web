@@ -12,7 +12,10 @@ export default function Rewards() {
           decoding="async"
           aria-hidden="true"
         />
-        <div className="absolute inset-0 bg-black/45" aria-hidden="true" />
+        <div
+          className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/70 via-black/65 to-black/75"
+          aria-hidden="true"
+        />
 
         <div className="relative z-10 mx-auto flex max-w-3xl flex-col items-center">
           <h2 className="text-[32px] leading-[1.12] font-medium tracking-tight text-white sm:text-[40px]">

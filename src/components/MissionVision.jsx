@@ -29,7 +29,7 @@ export default function MissionVision() {
             width="1200"
             height="801"
             alt="People holding recycling, water, plant, and earth cutouts"
-            className="motion-from-right w-full rounded-2xl"
+            className="motion-from-right aspect-[3/2] w-full rounded-2xl object-cover"
             loading="lazy"
             decoding="async"
           />
@@ -43,7 +43,7 @@ export default function MissionVision() {
             width="1200"
             height="801"
             alt="Neon recycling symbol with a green heart of moss at the center"
-            className="motion-from-left order-2 w-full rounded-2xl lg:order-1"
+            className="motion-from-left order-2 aspect-[3/2] w-full rounded-2xl object-cover lg:order-1"
             loading="lazy"
             decoding="async"
           />

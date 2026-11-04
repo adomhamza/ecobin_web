@@ -45,12 +45,12 @@ export default function Community() {
   return (
     <section id="community" className="scroll-mt-24 bg-[#f5f6f8]">
       <div className="mx-auto w-full max-w-[1200px] px-5 py-16 sm:px-6 lg:py-24">
-        <div className="section-reveal mx-auto max-w-3xl text-center">
-          <Eyebrow center>Who We Serve</Eyebrow>
+        <div className="section-reveal max-w-3xl">
+          <Eyebrow>Who We Serve</Eyebrow>
           <h2 className="mt-4 text-[32px] leading-[1.15] font-medium tracking-tight text-ink sm:text-[40px]">
             Eco-Friendly Waste Solutions for Everyone
           </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
+          <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
             Bridging the gap between modern technology and everyday disposal to deliver clean,
             transparent, and eco-friendly waste services across entire communities.
           </p>

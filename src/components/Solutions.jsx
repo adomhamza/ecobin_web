@@ -2,9 +2,31 @@ import { useState } from 'react'
 import { LuCheck } from 'react-icons/lu'
 import { Eyebrow } from './Features.jsx'
 
-const slides = [
+const solutions = [
   {
-    image: '/solution.webp',
+    image: '/our-2.svg',
+    imageAlt: 'Hands holding a phone open to scheduled and past pickups',
+    title: 'Pickup Scheduling',
+    body: 'Request a pickup when your bin is actually full. Demand-based scheduling and route planning send trucks where they are needed and cut down unnecessary trips.',
+    points: [
+      'Collection planned from real bin conditions',
+      'Fewer overflowing bins and wasted visits',
+      'Routes and resources planned from data',
+    ],
+  },
+  {
+    image: '/our-4.svg',
+    imageAlt: 'Phone scanning a plastic bottle with the EcoBin app',
+    title: 'AI waste Scanner',
+    body: 'Point your phone at an item and get a suggestion for where it belongs. EcoBin is exploring AI-assisted waste identification to make sorting easier for every household.',
+    points: [
+      'Sorting guidance at the moment of disposal',
+      'Supports better separation and recovery',
+      'Educational tips that match what you scan',
+    ],
+  },
+  {
+    image: '/our-1.svg',
     imageAlt: 'Hands holding a phone open to the EcoBin waste digital guide',
     title: 'Waste Digital Guide',
     body: 'Learn simple, proactive steps to properly rinse and prepare materials, ensuring your waste actually gets recycled instead of landfilled on our app.',
@@ -14,75 +36,25 @@ const slides = [
     ],
   },
   {
-    image: '/monitoring.webp',
-    imageAlt: 'Phone showing an 80 percent fill level and a weekly pickup chart',
+    image: '/our-3.svg',
+    imageAlt: 'Phone showing a smart bin fill level and pickup chart',
     title: 'Smart Bin Monitoring',
-    body: 'Fill level monitoring right from your phone so you always know when a bin needs attention before it overflows.',
+    body: 'Sensors on participating bins report how full they are, so collection needs are visible instead of guessed and overflow can be prevented.',
     points: [
-      'Track live fill levels across household and business bins without guessing or unnecessary checks.',
-      'Plan pickups around real capacity data so collection stays timely, efficient, and less disruptive.',
-    ],
-  },
-  {
-    image: '/scanner.webp',
-    imageAlt: 'Someone scanning a bottle barcode with the EcoBin app',
-    title: 'AI Waste Scanner',
-    body: 'Scan an item and know exactly where it belongs so recycling stays accurate and contamination stays low.',
-    points: [
-      'Identify recyclables, compostables, and general waste in seconds with clear in-app guidance.',
-      'Reduce well-intentioned sorting mistakes that send recoverable materials straight to landfill.',
-    ],
-  },
-  {
-    image: '/pickup.webp',
-    imageAlt: 'Hands holding a phone open to scheduled and past pickups',
-    title: 'Pickup Scheduling',
-    body: 'Request pickups whenever your bin is full and keep collection aligned with what you actually generate.',
-    points: [
-      'Book on-demand pickups from the app instead of waiting on fixed schedules that miss your needs.',
-      'Review upcoming and past collections so households and businesses stay organised and accountable.',
+      'Fill-level readings sent from the bin',
+      'Better visibility across participating households',
+      'Low-power connectivity explored for distributed bins',
     ],
   },
 ]
 
-function ArrowButton({ direction, onClick, label }) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      aria-label={label}
-      className="flex size-11 cursor-pointer items-center justify-center rounded-full border border-[#d0d5dd] text-ink transition hover:border-ink/40 hover:bg-white"
-    >
-      <svg viewBox="0 0 24 24" className="size-5" fill="none" aria-hidden="true">
-        {direction === 'prev' ? (
-          <path
-            d="M14.5 6.5 9 12l5.5 5.5"
-            stroke="currentColor"
-            strokeWidth="1.8"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        ) : (
-          <path
-            d="M9.5 6.5 15 12l-5.5 5.5"
-            stroke="currentColor"
-            strokeWidth="1.8"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        )}
-      </svg>
-    </button>
-  )
-}
-
 export default function Solutions() {
   const [index, setIndex] = useState(0)
-  const slide = slides[index]
-  const progress = ((index + 1) / slides.length) * 100
+  const slide = solutions[index]
+  const progress = ((index + 1) / solutions.length) * 100
 
-  const goPrev = () => setIndex((i) => (i === 0 ? slides.length - 1 : i - 1))
-  const goNext = () => setIndex((i) => (i === slides.length - 1 ? 0 : i + 1))
+  const goPrev = () => setIndex((current) => (current === 0 ? solutions.length - 1 : current - 1))
+  const goNext = () => setIndex((current) => (current === solutions.length - 1 ? 0 : current + 1))
 
   return (
     <section id="features" className="scroll-mt-24 bg-white">
@@ -119,8 +91,12 @@ export default function Solutions() {
               <p className="mt-4 text-[16px] leading-relaxed text-ink">{slide.body}</p>
               <ul className="mt-8 space-y-5">
                 {slide.points.map((point) => (
-                  <li key={point} className="flex items-center gap-3 text-[16px] leading-relaxed text-ink">
-                    <LuCheck className="size-4 shrink-0 text-brand" strokeWidth={2.5} aria-hidden="true" />
+                  <li key={point} className="flex items-start gap-3 text-[16px] leading-relaxed text-ink">
+                    <LuCheck
+                      className="mt-1 size-4 shrink-0 text-brand"
+                      strokeWidth={2.5}
+                      aria-hidden="true"
+                    />
                     <span>{point}</span>
                   </li>
                 ))}
@@ -131,8 +107,8 @@ export default function Solutions() {
 
         <div className="mt-8 flex items-center gap-5 sm:gap-8">
           <div className="flex shrink-0 gap-3">
-            <ArrowButton direction="prev" onClick={goPrev} label="Previous solution" />
-            <ArrowButton direction="next" onClick={goNext} label="Next solution" />
+            <CarouselButton direction="prev" onClick={goPrev} label="Previous solution" />
+            <CarouselButton direction="next" onClick={goNext} label="Next solution" />
           </div>
           <div className="relative h-px min-w-0 flex-1 bg-[#d0d5dd]" aria-hidden="true">
             <div
@@ -143,5 +119,36 @@ export default function Solutions() {
         </div>
       </div>
     </section>
+  )
+}
+
+function CarouselButton({ direction, onClick, label }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      aria-label={label}
+      className="flex size-11 cursor-pointer items-center justify-center rounded-full border border-[#d0d5dd] text-ink transition hover:border-ink/40 hover:bg-white"
+    >
+      <svg viewBox="0 0 24 24" className="size-5" fill="none" aria-hidden="true">
+        {direction === 'prev' ? (
+          <path
+            d="M14.5 6.5 9 12l5.5 5.5"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        ) : (
+          <path
+            d="M9.5 6.5 15 12l-5.5 5.5"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        )}
+      </svg>
+    </button>
   )
 }
