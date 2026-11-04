@@ -1,4 +1,3 @@
-import { LuPlay } from 'react-icons/lu'
 import { Eyebrow } from './Features.jsx'
 
 export default function HowItWorks() {
@@ -16,23 +15,18 @@ export default function HowItWorks() {
           </p>
         </div>
 
-        <div className="motion-card relative mt-10 overflow-hidden rounded-[28px] lg:mt-14">
-          <img
-            src="/video.webp"
-            width="1247"
-            height="721"
-            alt="EcoBin collection team at work"
-            className="w-full"
-            loading="lazy"
-            decoding="async"
-          />
-          <button
-            type="button"
-            aria-label="Play EcoBin walkthrough"
-            className="absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 cursor-pointer items-center justify-center bg-transparent text-white transition hover:scale-105"
-          >
-            <LuPlay className="size-14 fill-white drop-shadow-md sm:size-16" aria-hidden="true" />
-          </button>
+        <div className="motion-card mt-10 overflow-hidden rounded-[28px] lg:mt-14">
+          <div className="aspect-video w-full">
+            <iframe
+              src="https://www.youtube.com/embed/5bVDpmzMICE"
+              title="See how EcoBin works"
+              className="size-full"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          </div>
         </div>
       </div>
     </section>
