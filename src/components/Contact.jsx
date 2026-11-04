@@ -105,7 +105,7 @@ export default function Contact() {
                   <span className="grid size-12 place-items-center rounded-full bg-brand text-white">
                     <LuMapPin className="size-5" aria-hidden="true" />
                   </span>
-                  Accra, Kasoa
+                  159 Green Avenue Street, Aplaku, Accra - Ghana
                 </a>
               </li>
             </ul>
