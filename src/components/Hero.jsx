@@ -8,7 +8,7 @@ export default function Hero() {
         aria-hidden="true"
       />
       <div
-        className="pointer-events-none absolute inset-0 bg-black/60 lg:bg-gradient-to-r lg:from-black/85 lg:via-black/70 lg:to-black/55"
+        className="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-black/25"
         aria-hidden="true"
       />
 
