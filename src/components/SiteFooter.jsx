@@ -32,18 +32,18 @@ export default function SiteFooter() {
             <div>
               <p className="font-semibold text-white">EcoBin</p>
               <p className="mt-4 max-w-sm text-sm leading-relaxed text-white">
-                EcoBin is a waste management company based in Accra, Ghana. We collaborate with
+                ECOBIN is a waste management company based in Accra, Ghana. We collaborate with
                 people and business to provide cleaner environment.
               </p>
               <p className="mt-6 text-sm leading-relaxed text-white">
-                EcoBin - Accra, Ghana
+                ECOBIN - Accra, Ghana
                 <br />
                 <a href="tel:+233208420372" className="hover:text-white/80">
                   +233 20 842 0372
                 </a>
                 <br />
                 Get in touch:{' '}
-                <a href="mailto:ecobin@gmail.com" className="hover:text-white/80">
+                <a href="mailto:hello@ecobin.eco" className="hover:text-white/80">
                   ecobin@gmail.com
                 </a>
               </p>
@@ -95,9 +95,9 @@ export default function SiteFooter() {
           </div>
         </div>
         <p className="mt-8 text-center text-xs leading-relaxed text-white">
-          © 2026 EcoBin
+          © 2026 ECOBIN LTD
           <br />
-          EcoBin is registered in Accra - Ghana
+          ECOBIN LTD is registered in Accra - Ghana
         </p>
       </div>
     </footer>
