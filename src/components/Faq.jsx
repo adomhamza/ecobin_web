@@ -72,7 +72,7 @@ export default function Faq() {
 
   return (
     <section id="faq" className="scroll-mt-24 bg-white">
-      <div className="mx-auto w-full max-w-[1160px] px-5 pt-16 sm:px-6 lg:pt-24">
+      <div className="mx-auto w-full max-w-[1160px] px-5 pt-16 sm:px-6 lg:pt-[60px]">
         <div className="motion-card overflow-hidden rounded-[28px]">
           <img
             src="/footer-img.webp"
@@ -86,7 +86,7 @@ export default function Faq() {
         </div>
       </div>
 
-      <div className="mx-auto w-full max-w-[1031px] px-5 pt-16 pb-16 sm:px-6 lg:pt-24 lg:pb-24">
+      <div className="mx-auto w-full max-w-[1031px] px-5 pt-16 pb-16 sm:px-6 lg:pt-[60px] lg:pb-[60px]">
         <div className="section-reveal text-center">
           <Eyebrow center>FAQ&apos;S</Eyebrow>
           <h2 className="mt-4 text-[40px] leading-[1.15] font-medium tracking-tight text-ink">

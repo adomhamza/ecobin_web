@@ -62,7 +62,7 @@ export default function Sdg() {
 
   return (
     <section id="sdg" className="scroll-mt-24 bg-[#212121]">
-      <div className="mx-auto w-full max-w-[1200px] px-5 py-16 sm:px-6 lg:py-24">
+      <div className="mx-auto w-full max-w-[1200px] px-5 py-16 sm:px-6 lg:py-[60px]">
         <div className="section-reveal mx-auto max-w-3xl text-center">
           <Eyebrow center>Sustainable Development Goals</Eyebrow>
           <h2 className="mt-4 text-[40px] leading-[1.15] font-medium tracking-tight text-white">

@@ -10,8 +10,8 @@ function SectionLabel({ children }) {
 export default function MissionVision() {
   return (
     <>
-      <section id="mission" className="scroll-mt-24 bg-white">
-        <div className="mx-auto grid w-full max-w-[1200px] items-center gap-10 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:py-20">
+      <section id="mission" className="scroll-mt-0 bg-white">
+        <div className="mx-auto grid w-full max-w-[1200px] items-center gap-10 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:py-[60px]">
           <div className="motion-from-left">
             <SectionLabel>Our Mission</SectionLabel>
             <h2 className="mt-5 text-[40px] leading-[1.15] font-medium tracking-tight text-ink">
@@ -37,7 +37,7 @@ export default function MissionVision() {
       </section>
 
       <section id="vision" className="scroll-mt-24 bg-white">
-        <div className="mx-auto grid w-full max-w-[1200px] items-center gap-10 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:py-20">
+        <div className="mx-auto grid w-full max-w-[1200px] items-center gap-10 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:py-[60px]">
           <img
             src="/our-vision.webp"
             width="1200"
@@ -63,7 +63,7 @@ export default function MissionVision() {
       </section>
 
       <section id="values" className="scroll-mt-24 bg-[#f5f6f8]">
-        <div className="mx-auto grid w-full max-w-[1200px] items-center gap-10 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:py-24">
+        <div className="mx-auto grid w-full max-w-[1200px] items-center gap-10 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:py-[60px]">
           <div className="motion-from-left space-y-8">
             <div>
               <h2 className="text-[40px] font-medium tracking-tight text-ink">

@@ -13,18 +13,17 @@ export default function Rewards() {
           aria-hidden="true"
         />
         <div
-          className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/70 via-black/65 to-black/75"
+          className="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-black/25"
           aria-hidden="true"
         />
 
         <div className="relative z-10 mx-auto flex max-w-3xl flex-col items-center">
           <h2 className="text-[40px] leading-[1.12] font-medium tracking-tight text-white">
-            Don&apos;t just Schedule pickups,
-            <br />
-            get excited and earn
+            Learn, Earn & Make a Difference.
           </h2>
-          <p className="mt-5 max-w-xl text-base leading-relaxed text-white/90 sm:text-lg">
-            Read articles, watch videos to earn free pickup on your next full bin
+          <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/90 sm:text-lg">
+            Read articles, watch videos and complete quizzes to earn points. Redeem your points for
+            exciting rewards while building better waste habits.
           </p>
           <a
             href="#download"

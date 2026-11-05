@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <section id="about" className="scroll-mt-24 bg-white">
-      <div className="mx-auto grid w-full max-w-[1200px] items-center gap-10 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:py-24">
+      <div className="mx-auto grid w-full max-w-[1200px] items-center gap-10 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:py-[60px]">
         <img
           src="/pickup.webp"
           width="741"
