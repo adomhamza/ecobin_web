@@ -1,7 +1,10 @@
-import { useEffect, useMemo } from 'react'
+import { useEffect, useMemo, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import StoreBadges from '../components/StoreBadges.jsx'
 import {
+  androidIntentUrl,
+  androidStagingIntentUrl,
+  isAndroidUserAgent,
   parseAppPath,
   recordDeepLinkClick,
   referrerFromAppPath,
@@ -9,17 +12,42 @@ import {
 
 /**
  * Share landing for `/app` and content deep links.
- * Installed apps are opened by OS App Links / Universal Links before this page.
+ * Verified App Links open the app before this page. When verification fails
+ * (common if Play App Signing SHA is missing from assetlinks.json) or the
+ * link opens in WhatsApp's in-app browser, we still try an Android intent://
+ * that prefers prod, then staging, then Play Store.
  */
 export default function AppOpenPage() {
   const { pathname } = useLocation()
   const parsed = useMemo(() => parseAppPath(pathname), [pathname])
   const referrerPath = referrerFromAppPath(parsed.appPath)
+  const isAndroid = useMemo(
+    () => typeof navigator !== 'undefined' && isAndroidUserAgent(),
+    [],
+  )
+  const openHref = useMemo(() => {
+    if (isAndroid) return androidIntentUrl(parsed.appPath, referrerPath)
+    return parsed.appPath
+  }, [isAndroid, parsed.appPath, referrerPath])
+  const stagingHref = useMemo(
+    () => androidStagingIntentUrl(parsed.appPath, referrerPath),
+    [parsed.appPath, referrerPath],
+  )
+  const didIntent = useRef(false)
 
   useEffect(() => {
     document.title = `${parsed.title} · EcoBin`
     void recordDeepLinkClick(parsed.appPath)
   }, [parsed])
+
+  useEffect(() => {
+    if (didIntent.current || !isAndroid) return
+    didIntent.current = true
+    const timer = window.setTimeout(() => {
+      window.location.replace(androidIntentUrl(parsed.appPath, referrerPath))
+    }, 250)
+    return () => window.clearTimeout(timer)
+  }, [isAndroid, parsed.appPath, referrerPath])
 
   return (
     <div className="relative min-h-dvh overflow-hidden bg-canvas text-ink">
@@ -50,11 +78,22 @@ export default function AppOpenPage() {
         <p className="mt-8 text-sm text-muted">
           Already have EcoBin?{' '}
           <a
-            href={parsed.appPath}
+            href={openHref}
             className="font-medium text-brand underline-offset-2 hover:underline"
           >
             Open in the app
           </a>
+          {isAndroid ? (
+            <>
+              {' · '}
+              <a
+                href={stagingHref}
+                className="font-medium text-brand underline-offset-2 hover:underline"
+              >
+                Open staging
+              </a>
+            </>
+          ) : null}
         </p>
 
         <Link

@@ -15,7 +15,8 @@
       "namespace": "android_app",
       "package_name": "com.app.ecobin.staging",
       "sha256_cert_fingerprints": [
-        "3B:B2:FC:3A:2E:FB:AC:AD:C9:DF:B2:97:B9:A6:92:74:6F:47:2B:BE:D9:7A:3C:51:6A:89:53:F7:B5:3D:29:43"
+        "3B:B2:FC:3A:2E:FB:AC:AD:C9:DF:B2:97:B9:A6:92:74:6F:47:2B:BE:D9:7A:3C:51:6A:89:53:F7:B5:3D:29:43",
+        "A1:BF:58:23:DC:DF:D2:8C:EE:7F:DE:CB:DB:FF:36:55:D2:F9:63:28:13:02:C6:1E:61:F0:35:8A:6D:4B:18:96"
       ]
     }
   }
