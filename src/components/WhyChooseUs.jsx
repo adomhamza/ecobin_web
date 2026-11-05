@@ -22,7 +22,7 @@ const priorities = [
 export default function WhyChooseUs() {
   return (
     <section id="why-choose" className="scroll-mt-24 bg-white">
-      <div className="mx-auto grid w-full max-w-[1200px] items-center gap-10 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:py-24">
+      <div className="mx-auto grid w-full max-w-[1200px] items-center gap-10 px-5 py-16 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:py-[60px]">
         <div className="motion-from-left">
           <Eyebrow>Why Choose Us?</Eyebrow>
           <h2 className="mt-4 text-[40px] leading-[1.15] font-medium tracking-tight text-ink">

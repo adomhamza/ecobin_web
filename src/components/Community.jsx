@@ -44,7 +44,7 @@ const audiences = [
 export default function Community() {
   return (
     <section id="community" className="scroll-mt-24 bg-[#f5f6f8]">
-      <div className="mx-auto w-full max-w-[1200px] px-5 py-16 sm:px-6 lg:py-24">
+      <div className="mx-auto w-full max-w-[1200px] px-5 py-16 sm:px-6 lg:py-[60px]">
         <div className="section-reveal max-w-3xl">
           <Eyebrow>Who We Serve</Eyebrow>
           <h2 className="mt-4 text-[40px] leading-[1.15] font-medium tracking-tight text-ink">

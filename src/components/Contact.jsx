@@ -75,7 +75,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="scroll-mt-24 bg-white">
-      <div className="mx-auto w-full max-w-[1120px] px-5 py-8 pb-16 sm:px-6">
+      <div className="mx-auto w-full max-w-[1120px] px-5 py-8 pb-16 sm:px-6 lg:py-[60px]">
         <div className="section-reveal text-center">
           <h2 className="text-[40px] leading-[1.15] font-medium tracking-tight text-ink">
             Still have a question?
@@ -85,9 +85,9 @@ export default function Contact() {
 
         <div data-motion-group className="mt-10 grid gap-5 lg:grid-cols-[0.82fr_1.18fr]">
           <div className="motion-card flex min-h-0 flex-col rounded-[28px] bg-[#f4f6fb] p-8 sm:p-10 lg:h-[597px]">
-            <h3 className="text-[32px] leading-[1.15] font-bold tracking-tight sm:text-[40px]">
+            <h5 className="font-sans text-[32px] font-medium text-[#0F1621]">
               How to reach us?
-            </h3>
+            </h5>
             <ul className="mt-auto space-y-6 pt-16">
               <li>
                 <a href="tel:+233208420372" className="flex items-center gap-4 text-slate-800">
@@ -99,7 +99,7 @@ export default function Contact() {
               </li>
               <li>
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=Accra+Kasoa+Ghana"
+                  href="https://www.google.com/maps/search/?api=1&query=Trayton+Technologies"
                   target="_blank"
                   rel="noreferrer"
                   className="flex items-center gap-4 text-slate-800"

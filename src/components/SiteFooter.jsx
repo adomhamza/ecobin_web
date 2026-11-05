@@ -44,7 +44,7 @@ export default function SiteFooter() {
                 <br />
                 Get in touch:{' '}
                 <a href="mailto:hello@ecobin.eco" className="hover:text-white/80">
-                  ecobin@gmail.com
+                  hello@ecobin.eco
                 </a>
               </p>
             </div>
