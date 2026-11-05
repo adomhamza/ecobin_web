@@ -8,19 +8,19 @@ const solutions = [
     imageAlt: 'Hands holding a phone open to the EcoBin waste digital guide',
     title: 'Waste Education & Digital Guide',
     tagline: 'Know your waste. Make better choices.',
-    body: 'Learn how to sort, prepare and dispose of household waste responsibly with practical guides and educational resources in the EcoBin app.',
+    body: 'Learn how to sort, prepare and dispose of household waste with practical guides in the EcoBin app.',
     points: [
       {
         label: 'Prepare waste correctly:',
-        text: 'Learn how to clean, sort and prepare recyclable materials for recovery.',
+        text: 'Clean, sort and prepare recyclables for recovery.',
       },
       {
         label: 'Handle hazardous waste safely:',
-        text: 'Understand how to identify batteries, electronics, medical waste and other potentially hazardous items, with guidance on safer handling and appropriate disposal.',
+        text: 'Identify batteries, electronics and medical waste, then dispose of them safely.',
       },
       {
-        label: "Avoid common sorting mistakes:",
-        text: "Know what belongs in your recycling bin and what doesn't, helping prevent contamination and improve material recovery.",
+        label: 'Avoid common sorting mistakes:',
+        text: 'Keep the wrong items out of the recycling bin.',
       },
     ],
   },
@@ -96,14 +96,12 @@ export default function Solutions() {
   return (
     <section id="features" className="scroll-mt-24 bg-white">
       <div className="section-reveal mx-auto w-full max-w-[1200px] px-5 py-16 sm:px-6 lg:py-[60px]">
-        <div className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-end lg:gap-16">
-          <div>
-            <Eyebrow>Our Solutions</Eyebrow>
-            <h2 className="mt-4 text-[40px] leading-[1.1] font-medium tracking-tight text-ink">
-              EcoBin&apos;s integrated waste approach
-            </h2>
-          </div>
-          <p className="max-w-xl text-[16px] leading-relaxed text-black lg:pb-2">
+        <div className="grid gap-y-4 lg:grid-cols-[1.05fr_0.95fr] lg:gap-x-16">
+          <Eyebrow>Our Solutions</Eyebrow>
+          <h2 className="text-[40px] leading-[1.1] font-medium tracking-tight text-ink lg:col-start-1 lg:row-start-2">
+            EcoBin&apos;s integrated waste approach
+          </h2>
+          <p className="max-w-xl text-[16px] leading-relaxed text-black lg:col-start-2 lg:row-start-2 lg:self-start">
             EcoBin is developing an integrated approach that connects waste collection, smart
             monitoring, digital engagement and material recovery.
           </p>
