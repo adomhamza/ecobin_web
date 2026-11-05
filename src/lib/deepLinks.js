@@ -1,6 +1,12 @@
 /** Public HTTPS origin used in share links and App Link verification. */
 export const SITE_ORIGIN = 'https://www.ecobin.eco'
 
+/** Production Android applicationId (Play + App Links). */
+export const ANDROID_PACKAGE = 'com.app.ecobin'
+
+/** Staging Android applicationId (`applicationIdSuffix ".staging"`). */
+export const ANDROID_PACKAGE_STAGING = 'com.app.ecobin.staging'
+
 /**
  * Store listing URLs. Override with Vite env when listings go live.
  * Play referrer carries the in-app path for deferred Android installs.
@@ -8,7 +14,7 @@ export const SITE_ORIGIN = 'https://www.ecobin.eco'
 export function playStoreUrl(referrerPath = '') {
   const base =
     import.meta.env.VITE_ANDROID_PLAY_STORE_URL ||
-    'https://play.google.com/store/apps/details?id=com.app.ecobin'
+    `https://play.google.com/store/apps/details?id=${ANDROID_PACKAGE}`
   if (!referrerPath) return base
   const joiner = base.includes('?') ? '&' : '?'
   return `${base}${joiner}referrer=${encodeURIComponent(referrerPath)}`
@@ -18,6 +24,72 @@ export function appStoreUrl() {
   return (
     import.meta.env.VITE_IOS_APP_STORE_URL || 'https://apps.apple.com/app/ecobin'
   )
+}
+
+/** True in Android browsers / in-app WebViews (WhatsApp, etc.). */
+export function isAndroidUserAgent(ua = navigator.userAgent || '') {
+  return /Android/i.test(ua)
+}
+
+/**
+ * Build an HTTPS VIEW intent for one EcoBin Android package.
+ *
+ * @param {string} hostPath `www.ecobin.eco/app/...` (no scheme)
+ * @param {string} packageName Android applicationId
+ * @param {string} fallbackUrl Next intent or Play Store URL
+ */
+function androidIntentForPackage(hostPath, packageName, fallbackUrl) {
+  return (
+    `intent://${hostPath}#Intent;` +
+    'scheme=https;' +
+    `package=${packageName};` +
+    'action=android.intent.action.VIEW;' +
+    'category=android.intent.category.BROWSABLE;' +
+    `S.browser_fallback_url=${encodeURIComponent(fallbackUrl)};` +
+    'end'
+  )
+}
+
+/**
+ * Intent URL that opens an installed EcoBin app for a share path.
+ * Tries prod (`com.app.ecobin`), then staging (`com.app.ecobin.staging`),
+ * then the Play Store. Works when DAL verification failed (missing Play
+ * App Signing SHA) or the link opened in an in-app browser.
+ *
+ * @param {string} appPath Absolute path such as `/app/explore/articles/abc`
+ * @param {string} [referrerPath] Deferred install referrer (no `/app` prefix)
+ */
+/**
+ * Intent that opens only the staging package (testers), then Play Store.
+ *
+ * @param {string} appPath Absolute path such as `/app/explore/articles/abc`
+ * @param {string} [referrerPath] Deferred install referrer (no `/app` prefix)
+ */
+export function androidStagingIntentUrl(appPath, referrerPath = '') {
+  const path = appPath.startsWith('/') ? appPath : `/${appPath}`
+  return androidIntentForPackage(
+    `www.ecobin.eco${path}`,
+    ANDROID_PACKAGE_STAGING,
+    playStoreUrl(referrerPath),
+  )
+}
+
+/**
+ * Prefer prod, then staging, then Play Store.
+ *
+ * @param {string} appPath Absolute path such as `/app/explore/articles/abc`
+ * @param {string} [referrerPath] Deferred install referrer (no `/app` prefix)
+ */
+export function androidIntentUrl(appPath, referrerPath = '') {
+  const path = appPath.startsWith('/') ? appPath : `/${appPath}`
+  const hostPath = `www.ecobin.eco${path}`
+  const play = playStoreUrl(referrerPath)
+  const staging = androidIntentForPackage(
+    hostPath,
+    ANDROID_PACKAGE_STAGING,
+    play,
+  )
+  return androidIntentForPackage(hostPath, ANDROID_PACKAGE, staging)
 }
 
 /** API base including `/api/v1` for deferred-click recording. */
