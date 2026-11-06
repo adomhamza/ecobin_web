@@ -9,6 +9,7 @@ import Contact from '../components/Contact.jsx'
 import DownloadCta from '../components/DownloadCta.jsx'
 import Faq from '../components/Faq.jsx'
 import Hero from '../components/Hero.jsx'
+import HomeJsonLd from '../components/HomeJsonLd.jsx'
 import HowItWorks from '../components/HowItWorks.jsx'
 import MissionVision from '../components/MissionVision.jsx'
 import Solutions from '../components/Solutions.jsx'
@@ -92,6 +93,7 @@ export default function HomePage() {
 
   return (
     <div ref={root} id="top">
+      <HomeJsonLd />
       <a
         href="#main"
         className="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-[100] focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-ink focus:shadow-lg"
