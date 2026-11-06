@@ -1,7 +1,7 @@
 import { faqAnswerText, faqItems } from '../lib/faqContent.js'
 
 const siteUrl = 'https://www.ecobin.eco/'
-const previewImage = 'https://www.ecobin.eco/ecobin_hero.svg'
+const previewImage = 'https://www.ecobin.eco/ecobin_hero.jpg'
 const description =
   'EcoBin is a Ghana-focused household waste collection service. Request pickups, monitor bins, and learn how to sort and recycle with the EcoBin app.'
 
