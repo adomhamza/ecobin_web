@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import {
   // FaFacebookF,
   FaInstagram,
@@ -21,6 +22,8 @@ const links = [
   { label: 'Services', href: '#features' },
   { label: 'Pricing', href: '#faq' },
   { label: 'Reach Us', href: '#contact' },
+  { label: 'Privacy Policy', to: '/privacy' },
+  { label: 'Terms of Service', to: '/terms' },
 ]
 
 export default function SiteFooter() {
@@ -53,9 +56,15 @@ export default function SiteFooter() {
               <ul className="mt-4 space-y-3 text-sm">
                 {links.map((link) => (
                   <li key={link.label}>
-                    <a href={link.href} className="text-white transition hover:text-white/80">
-                      {link.label}
-                    </a>
+                    {link.to ? (
+                      <Link to={link.to} className="text-white transition hover:text-white/80">
+                        {link.label}
+                      </Link>
+                    ) : (
+                      <a href={link.href} className="text-white transition hover:text-white/80">
+                        {link.label}
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>

@@ -1,6 +1,12 @@
 # Keep App Link / Universal Link verification files as static assets.
 /.well-known/*  /.well-known/:splat  200
 
+# Store legal pages are prerendered static documents.
+/privacy   /privacy.html  200
+/privacy/  /privacy.html  200
+/terms     /terms.html    200
+/terms/    /terms.html    200
+
 # SPA routes for share landings (and the marketing site).
 /app  /index.html  200
 /app/*  /index.html  200

@@ -15,7 +15,23 @@
       "destination": "/.well-known/$1"
     },
     {
-      "source": "/((?!\\.well-known/).*)",
+      "source": "/privacy",
+      "destination": "/privacy.html"
+    },
+    {
+      "source": "/privacy/",
+      "destination": "/privacy.html"
+    },
+    {
+      "source": "/terms",
+      "destination": "/terms.html"
+    },
+    {
+      "source": "/terms/",
+      "destination": "/terms.html"
+    },
+    {
+      "source": "/((?!\\.well-known/|privacy|terms).*)",
       "destination": "/index.html"
     }
   ]

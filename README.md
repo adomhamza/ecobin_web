@@ -7,6 +7,17 @@ pnpm install
 pnpm dev
 ```
 
+## Store legal pages
+
+Use these public URLs in App Store Connect and Google Play Console:
+
+| Page | URL |
+|------|-----|
+| Privacy Policy | `https://www.ecobin.eco/privacy` |
+| Terms of Service | `https://www.ecobin.eco/terms` |
+
+Both pages are prerendered, so the policy text is in the first HTML response.
+
 ## Deep links
 
 Share URLs (opened by the app when installed):
