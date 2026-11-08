@@ -1,7 +1,7 @@
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import About from '../components/About.jsx'
 import BackToTop from '../components/BackToTop.jsx'
 import Community from '../components/Community.jsx'
@@ -22,8 +22,14 @@ import SiteHeader from '../components/SiteHeader.jsx'
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 /** Marketing landing page (previous root App content). */
+const homeTitle = 'EcoBin — Waste management, made effortless'
+
 export default function HomePage() {
   const root = useRef(null)
+
+  useEffect(() => {
+    document.title = homeTitle
+  }, [])
 
   useGSAP(
     () => {
