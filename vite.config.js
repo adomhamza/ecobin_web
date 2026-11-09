@@ -9,6 +9,8 @@ function legalPagePreview() {
     '/privacy/': '/privacy.html',
     '/terms': '/terms.html',
     '/terms/': '/terms.html',
+    '/delete-account': '/delete-account.html',
+    '/delete-account/': '/delete-account.html',
   }
 
   return {

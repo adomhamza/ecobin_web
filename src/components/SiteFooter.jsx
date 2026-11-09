@@ -24,6 +24,7 @@ const links = [
   { label: 'Reach Us', href: '#contact' },
   { label: 'Privacy Policy', to: '/privacy' },
   { label: 'Terms of Service', to: '/terms' },
+  { label: 'Delete account', to: '/delete-account' },
 ]
 
 export default function SiteFooter() {

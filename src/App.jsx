@@ -9,6 +9,7 @@ export function AppRoutes() {
       <Route path="/" element={<HomePage />} />
       <Route path="/privacy" element={<LegalPage />} />
       <Route path="/terms" element={<LegalPage />} />
+      <Route path="/delete-account" element={<LegalPage />} />
       <Route path="/app" element={<AppOpenPage />} />
       <Route path="/app/explore/articles/:id" element={<AppOpenPage />} />
       <Route path="/app/explore/videos/:id" element={<AppOpenPage />} />
