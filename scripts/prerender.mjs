@@ -35,6 +35,20 @@ const pages = [
     canonical: 'https://www.ecobin.eco/terms',
     mustInclude: ['Terms of Service', 'Pickups and fees'],
   },
+  {
+    path: '/delete-account',
+    outFile: path.join(root, 'dist/delete-account.html'),
+    title: 'Delete your EcoBin account — EcoBin',
+    description:
+      'How to delete your EcoBin account and associated data, what ECOBIN LTD removes, and what may be kept.',
+    canonical: 'https://www.ecobin.eco/delete-account',
+    mustInclude: [
+      'Delete your EcoBin account',
+      'How to delete your account in the EcoBin app',
+      'Data we delete',
+      'Data we may keep, and for how long',
+    ],
+  },
 ]
 
 const template = fs.readFileSync(templatePath, 'utf8')

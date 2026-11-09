@@ -31,7 +31,15 @@
       "destination": "/terms.html"
     },
     {
-      "source": "/((?!\\.well-known/|privacy|terms).*)",
+      "source": "/delete-account",
+      "destination": "/delete-account.html"
+    },
+    {
+      "source": "/delete-account/",
+      "destination": "/delete-account.html"
+    },
+    {
+      "source": "/((?!\\.well-known/|privacy|terms|delete-account).*)",
       "destination": "/index.html"
     }
   ]

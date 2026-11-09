@@ -42,18 +42,9 @@ export const privacyLaterSections = [
     id: 'delete',
     heading: 'Delete your account',
     blocks: [
-      { type: 'p', text: 'You can delete your account in the app:' },
-      {
-        type: 'ol',
-        items: [
-          'Open EcoBin and sign in.',
-          'Open Profile, then Settings.',
-          'Choose Delete account and confirm.',
-        ],
-      },
       {
         type: 'p',
-        text: 'If you own a household that still has other members, transfer ownership or close the household first. You can also email us from the phone number or email on the account and ask us to delete it.',
+        text: 'To delete your EcoBin account and see what data is removed or kept, follow the steps on our Delete account page: https://www.ecobin.eco/delete-account. You can also open Profile, then Settings, then Delete account in the EcoBin app, or email hello@ecobin.eco from the phone number or email on the account.',
       },
     ],
   },

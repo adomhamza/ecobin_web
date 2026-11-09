@@ -15,8 +15,9 @@ Use these public URLs in App Store Connect and Google Play Console:
 |------|-----|
 | Privacy Policy | `https://www.ecobin.eco/privacy` |
 | Terms of Service | `https://www.ecobin.eco/terms` |
+| Delete account (Play Console) | `https://www.ecobin.eco/delete-account` |
 
-Both pages are prerendered, so the policy text is in the first HTML response.
+These pages are prerendered, so the text is in the first HTML response.
 
 ## Deep links
 

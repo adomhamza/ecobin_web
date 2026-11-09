@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { deleteAccount } from '../content/deleteAccount.js'
 import { privacyPolicy } from '../content/privacyPolicy.js'
 import { termsOfService } from '../content/termsOfService.js'
 import { company } from '../lib/company.js'
@@ -7,12 +8,33 @@ import { company } from '../lib/company.js'
 const documents = {
   [privacyPolicy.path]: privacyPolicy,
   [termsOfService.path]: termsOfService,
+  [deleteAccount.path]: deleteAccount,
 }
 
 const related = [
   { label: 'Privacy Policy', to: privacyPolicy.path },
   { label: 'Terms of Service', to: termsOfService.path },
+  { label: 'Delete account', to: deleteAccount.path },
 ]
+
+const urlPattern = /(https:\/\/[^\s]+)/g
+
+function LinkedText({ text }) {
+  const parts = text.split(urlPattern)
+  return parts.map((part) =>
+    part.startsWith('https://') ? (
+      <a
+        key={part}
+        href={part}
+        className="font-medium text-brand underline-offset-2 hover:underline"
+      >
+        {part}
+      </a>
+    ) : (
+      <span key={part}>{part}</span>
+    ),
+  )
+}
 
 function Blocks({ blocks }) {
   return blocks.map((block) => {
@@ -26,7 +48,9 @@ function Blocks({ blocks }) {
           className={`mt-3 space-y-2 pl-5 text-base leading-relaxed text-slate-700 ${listClass}`}
         >
           {block.items.map((item) => (
-            <li key={item}>{item}</li>
+            <li key={item}>
+              <LinkedText text={item} />
+            </li>
           ))}
         </List>
       )
@@ -34,7 +58,7 @@ function Blocks({ blocks }) {
 
     return (
       <p key={block.text} className="mt-3 text-base leading-relaxed text-slate-700">
-        {block.text}
+        <LinkedText text={block.text} />
       </p>
     )
   })
