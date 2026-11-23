@@ -5,6 +5,9 @@
       "namespace": "android_app",
       "package_name": "com.app.ecobin",
       "sha256_cert_fingerprints": [
+        "CF:95:18:97:24:A0:09:3A:C4:54:F4:BF:84:69:14:0A:5A:BD:75:3C:38:7C:68:42:AA:B0:61:9B:73:FC:B6:1F",
+        "9E:DB:7D:18:02:B4:D9:86:3E:96:45:29:04:A5:B5:B1:A7:6D:24:BE:BA:14:9C:8B:64:58:2C:2F:34:8A:23:6A",
+        "81:7B:B9:C9:1F:21:7D:3B:FE:AA:B3:2B:6C:9D:D3:BB:E0:7D:89:54:61:5E:E3:4B:99:69:69:15:61:0B:C1:E0",
         "3B:B2:FC:3A:2E:FB:AC:AD:C9:DF:B2:97:B9:A6:92:74:6F:47:2B:BE:D9:7A:3C:51:6A:89:53:F7:B5:3D:29:43"
       ]
     }

@@ -51,8 +51,7 @@ Expect `200` and `Content-Type: application/json` (especially for AASA). Do not 
 ### Fingerprints / Team ID
 
 - Apple Team ID in AASA: `85ZN4RD98T`
-- `assetlinks.json` currently lists the **upload** keystore SHA-256.
-  If Play App Signing is enabled, also add the **App signing** certificate SHA-256 from Play Console → App integrity → App signing.
+- `assetlinks.json` for `com.app.ecobin` lists the Play App signing certificates (classical and post-quantum) and the upload keystore SHA-256. Play Store installs verify against the App signing certificates.
 
 ### Env
 
